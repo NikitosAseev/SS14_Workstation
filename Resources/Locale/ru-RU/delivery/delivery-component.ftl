@@ -8,11 +8,11 @@ delivery-unlocked-others = { CAPITALIZE($recipient) } разблокировал
 delivery-opened-others = { CAPITALIZE($recipient) } открыл { $delivery }.
 delivery-unlock-verb = Разблокировать
 delivery-open-verb = Открыть
-delivery-slice-verb = Slice open
+delivery-slice-verb = Вскрыть
 delivery-teleporter-amount-examine =
     { $amount ->
-        [one] It contains [color=yellow]{ $amount }[/color] delivery.
-       *[other] It contains [color=yellow]{ $amount }[/color] deliveries.
+        [one] Внутри [color=yellow]{ $amount }[/color] доставка.
+       *[other] Внутри [color=yellow]{ $amount }[/color] доставок.
     }
-delivery-teleporter-empty = The { $entity } is empty.
-delivery-teleporter-empty-verb = Take mail
+delivery-teleporter-empty = { $entity } пуст.
+delivery-teleporter-empty-verb = Забрать почту
