@@ -89,13 +89,13 @@ namespace Content.Client.HealthAnalyzer.UI
                 ("entityName", entityName)
             );
 
-            Temperature.Text = Loc.GetString("health-analyzer-window-entity-temperature-text",
-                ("temperature", float.IsNaN(msg.Temperature) ? "N/A" : $"{msg.Temperature - Atmospherics.T0C:F1} °C ({msg.Temperature:F1} K)")
-            );
+            Temperature.Text = !float.IsNaN(msg.Temperature)
+                ? $"{msg.Temperature - Atmospherics.T0C:F1} °C ({msg.Temperature:F1} K)"
+                : Loc.GetString("health-analyzer-window-entity-unknown-value-text");
 
-            BloodLevel.Text = Loc.GetString("health-analyzer-window-entity-blood-level-text",
-                ("bloodLevel", float.IsNaN(msg.BloodLevel) ? "N/A" : $"{msg.BloodLevel * 100:F1} %")
-            );
+            BloodLevel.Text = !float.IsNaN(msg.BloodLevel)
+                ? $"{msg.BloodLevel * 100:F1} %"
+                : Loc.GetString("health-analyzer-window-entity-unknown-value-text");
 
             if (msg.Bleeding == true)
             {
