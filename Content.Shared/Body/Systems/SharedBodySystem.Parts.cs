@@ -9,11 +9,13 @@ using Content.Shared.Damage.Prototypes;
 using Content.Shared.Movement.Components;
 using Robust.Shared.Containers;
 using Robust.Shared.Utility;
+using Content.Shared.Hands.EntitySystems;
 
 namespace Content.Shared.Body.Systems;
 
 public partial class SharedBodySystem
 {
+    [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
     private void InitializeParts()
     {
         // TODO: This doesn't handle comp removal on child ents.
@@ -833,7 +835,7 @@ public partial class SharedBodySystem
     {
         foreach (var part in GetBodyChildren(bodyId, body))
         {
-            if (types.Contains(part.Component.PartType) )
+            if (types.Contains(part.Component.PartType))
                 yield return part;
         }
     }
@@ -849,7 +851,6 @@ public partial class SharedBodySystem
         {
             return;
         }
-
         Containers.Remove(entity.Owner, container);
     }
 }

@@ -151,6 +151,9 @@
   - type: Lung
   - type: DLungs
     organKey: lungs
+  - type: Organ
+    organType: Lung
+    species: diona
   - type: Metabolizer
     removeEmpty: true
     solutionOnBody: false

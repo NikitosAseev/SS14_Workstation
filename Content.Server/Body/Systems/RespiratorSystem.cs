@@ -167,7 +167,7 @@ public sealed class RespiratorSystem : EntitySystem
                 else
                     _atmosSys.Merge(lung.Air, gas);
 
-                _lungSystem.GasToReagent(organUid, uid, lung);
+                _lungSystem.GasToReagent(organUid, lung);
             }
         }
     }

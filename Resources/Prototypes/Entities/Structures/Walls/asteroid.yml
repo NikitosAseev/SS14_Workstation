@@ -668,6 +668,8 @@
     toolWhitelist:
       tags:
       - Pickaxe
+      components:
+      - ArmDrill
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic

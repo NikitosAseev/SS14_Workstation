@@ -100,5 +100,5 @@ public sealed partial class ProjectileComponent : Component
     public FixedPoint2 PenetrationAmount = FixedPoint2.Zero;
 
     [DataField]
-    public bool DamageBodyParts;
+    public bool DamageBodyParts = true;
 }

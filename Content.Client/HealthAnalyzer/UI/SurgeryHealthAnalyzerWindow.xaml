@@ -33,12 +33,16 @@
                         </BoxContainer>
                         <Label
                                 Name="PatientName"/>
-                        <Label
+                        <GridContainer Margin="0 5 0 0" Columns="2">
+                            <Label Text="{Loc 'health-analyzer-window-entity-temperature-text'}" />
+                            <Label
                                 Name="Temperature"
                                 Margin="0 5 0 0"/>
-                        <Label
+                            <Label Text="{Loc 'health-analyzer-window-entity-blood-level-text'}" />
+                            <Label
                                 Name="BloodLevel"
                                 Margin="0 5 0 0"/>
+                        </GridContainer>
                         <Label
                                 Name="Bleeding"
                                 Margin="0 5 0 0"/>
