@@ -73,3 +73,13 @@
 - type: entity
   id: OrganVoxKidneys
   parent: [ BaseVoxOrgan, OrganHumanKidneys ]
+
+- type: entity
+  id: OrganVoxStomach
+  parent: [ BaseVoxOrgan, OrganHumanStomach ]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Vox/organs.rsi
+  - type: Item
+    size: Small
+    heldPrefix: stomach

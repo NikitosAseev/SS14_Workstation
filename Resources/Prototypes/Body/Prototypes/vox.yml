@@ -32,7 +32,7 @@
           organ: OrganVoxLungs
           type: Lung
         stomach:
-          organ: OrganHumanStomach
+          organ: OrganVoxStomach
           type: Stomach
         liver:
           organ: OrganVoxLiver

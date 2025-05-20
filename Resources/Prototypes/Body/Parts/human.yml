@@ -17,7 +17,7 @@
         ents: [ ]
       attachment: !type:Container
         ents: [ ]
-      slotAttachment: !type:ContainerSlot
+      slotAttachment: !type:Container
         ents: [ ]
   - type: StaticPrice
     price: 100

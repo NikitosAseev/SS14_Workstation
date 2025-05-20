@@ -4,6 +4,10 @@
   name: "synth body part"
   abstract: true
   components:
+    - type: SurgeryWoundablePart
+      maxDamage: 150
+      canBeDollTarget: true
+      canBeExplosionTarget: true
     - type: Damageable
       damageContainer: Biological
     - type: BodyPart
@@ -15,7 +19,7 @@
           ents: [ ]
         attachment: !type:Container
           ents: [ ]
-        slotAttachment: !type:ContainerSlot
+        slotAttachment: !type:Container
           ents: [ ]
     - type: StaticPrice
       price: 100
