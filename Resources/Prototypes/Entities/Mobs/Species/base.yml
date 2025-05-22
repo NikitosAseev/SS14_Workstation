@@ -138,7 +138,6 @@
     - RadiationProtection
     - Drowsiness
     - Adrenaline
-  - type: Rush # RPSX - Stamina rush
   - type: Body
     prototype: Human
     requiredLegs: 2
