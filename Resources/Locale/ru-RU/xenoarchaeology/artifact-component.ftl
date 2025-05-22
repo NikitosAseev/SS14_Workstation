@@ -1,7 +1,7 @@
 ### Verbs
 
 cmd-unlocknode-desc = Разблокирует узел на заданном артефакте
-cmd-unlocknode-help = unlocknode <uid артефакта> <uid узла>
+cmd-unlocknode-help = Разблокировать у <uid артефакта> узел <uid узла>
 cmd-parse-failure-unlocknode-arg-num = Неверное количество аргументов
 cmd-parse-failure-unlocknode-invalid-entity = Предоставленный netEntity не является допустимым узлом
 artifact-verb-make-always-active = Сделать артефакт всегда активным
