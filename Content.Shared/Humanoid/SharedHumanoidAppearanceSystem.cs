@@ -41,6 +41,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     [Dependency] private readonly ISerializationManager _serManager = default!;
     [Dependency] private readonly MarkingManager _markingManager = default!;
     [Dependency] private readonly GrammarSystem _grammarSystem = default!;
+    [Dependency] private readonly SharedIdentitySystem _identity = default!;
     [Dependency] private readonly ISponsorsManager _sponsors = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!; // ADT-Changeling-Tweak
 
@@ -183,6 +184,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         if (TryComp<GrammarComponent>(target, out var grammar))
             _grammarSystem.SetGender((target, grammar), sourceHumanoid.Gender);
 
+        _identity.QueueIdentityUpdate(target);
         Dirty(target, targetHumanoid);
     }
 
