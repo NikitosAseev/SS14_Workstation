@@ -1,2 +1,2 @@
-ent-ActionToggleKnuckleDustersStun = Toggle stun knuckle dusters
-    .desc = Toggles the duster's built in stun baton.
+ent-ActionToggleKnuckleDustersStun = переключить электрошоковый кастет
+    .desc = Переключает встроенный электрошокер кастета.
