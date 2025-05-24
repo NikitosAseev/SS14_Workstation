@@ -28,4 +28,4 @@ names-dragon-dataset-27 = Тостаринус
 names-dragon-dataset-28 = Эмбергилл
 names-dragon-dataset-29 = Крыло Рока
 names-dragon-dataset-30 = Целестеус
-names-dragon-dataset-31 = Ярон 
+names-dragon-dataset-31 = Ярон

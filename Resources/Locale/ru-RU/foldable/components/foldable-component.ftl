@@ -8,4 +8,3 @@ unfold-verb = Разложить
 fold-flip-verb = Перевернуть
 fold-zip-verb = Застегнуть
 fold-unzip-verb = Расстегнуть
-
