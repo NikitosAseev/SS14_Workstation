@@ -666,21 +666,7 @@
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: adv-cleaning-module }
 
 # medical modules
-- type: entity
-  id: BorgModuleDiagnosis # todo: reuse when med refractor is finished
-  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
-  name: diagnosis cyborg module
-  components:
-  - type: Sprite
-    layers:
-    - state: medical
-    - state: icon-diagnosis
-  - type: ItemBorgModule
-    items:
-    - HandheldHealthAnalyzerUnpowered
-    - ClothingNeckStethoscope
-  - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: diagnosis-module }
+
 
 - type: entity
   id: BorgModuleTopicals
@@ -700,8 +686,13 @@
     - Bloodpack10Lingering
     - RegenerativeMeshLingering0
     - MedicatedSutureLingering0
+    - Syringe
+    - DrinkGlass
+    - DrinkGlass
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: treatment-module }
+
+# RPSX med borg update(delete diagnostic module)
 
 - type: entity
   id: BorgModuleRescue
