@@ -37,6 +37,7 @@ using Content.Server.RPSX.Bridges;
 using Content.Server.RPSX.Entry;
 using Content.Shared.RPSX.Patron;
 using Content.Server.SS220.TTS;
+using Content.Server.RPSX.Discord;
 
 namespace Content.Server.Entry
 {
@@ -116,6 +117,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<GhostKickManager>().Initialize();
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
                 IoCManager.Resolve<ISponsorsManager>().Initialize(); // RPSX
+                IoCManager.Resolve<IDiscordAuthManager>().Initialize(); // RPSX
                 IoCManager.Resolve<ServerApi>().Initialize();
 
                 _voteManager.Initialize();
