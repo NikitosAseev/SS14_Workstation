@@ -14,4 +14,4 @@ ent-WeaponPistolFlintlock = кремнёвый пистолет
     .suffix = Пистолет, Винтовка
 ent-WeaponPistolFlintlockEmpty = { ent-WeaponPistolFlintlock }
     .desc = { ent-WeaponPistolFlintlock.desc }
-    .suffix = Empty
+    .suffix = Пустой
