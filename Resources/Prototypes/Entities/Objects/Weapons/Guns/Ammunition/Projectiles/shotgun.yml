@@ -8,6 +8,7 @@
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: slug
   - type: Projectile
+    damageBodyParts: true
     damage:
       types:
         Piercing: 40
@@ -40,6 +41,7 @@
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     state: buckshot
   - type: Projectile
+    damageBodyParts: true
     damage:
       types:
         Piercing: 10
@@ -244,6 +246,7 @@
     - state: grapeshot
       shader: unshaded
   - type: Projectile
+    damageBodyParts: true
     damage:
       types:
         Piercing: 25
@@ -274,6 +277,7 @@
   - type: EmbeddableProjectile
     deleteOnRemove: true
   - type: Projectile
+    damageBodyParts: true
     deleteOnCollide: false
     damage:
       types:

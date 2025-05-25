@@ -72,6 +72,9 @@
     shape:
     - 0,0,0,2
   - type: DisarmMalus
+  - type: SurgeryTool
+    sound: /Audio/Effects/gib1.ogg
+  - type: SurgerySaw
 
 #Longswords
 - type: entity
@@ -102,6 +105,9 @@
     tags:
     - CaptainSabre
   - type: DisarmMalus
+  - type: SurgeryTool
+    sound: /Audio/Effects/gib1.ogg
+  - type: SurgerySaw
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-inanimate
     weight: 0.0002 # 5,000 times less likely than 1 regular animal
@@ -137,6 +143,9 @@
     - Back
     - Belt
   - type: DisarmMalus
+  - type: SurgeryTool
+    sound: /Audio/Effects/gib1.ogg
+  - type: SurgerySaw
 
 - type: entity
   name: energy katana
@@ -200,6 +209,9 @@
     - Back
     - SuitStorage #Bigger than the other swords, easier to strap to your suit.
   - type: DisarmMalus
+  - type: SurgeryTool
+    sound: /Audio/Effects/gib1.ogg
+  - type: SurgerySaw
 
 #Other/Weird
 - type: entity

@@ -6,8 +6,17 @@
   id: PartVox
   name: "vox body part"
   components:
-  - type: Sprite
-    sprite: Mobs/Species/Vox/parts.rsi
+  - type: Damageable
+    damageContainer: Biological
+  - type: BodyPart
+  - type: SurgeryBodyPart
+    species: vox
+  - type: ContainerContainer
+    containers:
+      bodypart: !type:Container
+        ents: [ ]
+  - type: StaticPrice
+    price: 100
   - type: Extractable
     juiceSolution:
       reagents:
@@ -22,14 +31,26 @@
   name: "vox torso"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "torso"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "torso"
+  - type: BodyPart
+    partType: Torso
+    species: vox
+  - type: SurgeryBodyPart
+    state:
+      incisable: true
+      endoSkeleton: true
+    container: true
   - type: Extractable
     juiceSolution:
       reagents:
       - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
         Quantity: 10
-      - ReagentId: AmmoniaBlood
-        Quantity: 20
 
 - type: entity
   parent: [ PartVox, BaseHead ]
@@ -37,13 +58,33 @@
   name: "vox head"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "head"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "head"
+  - type: BodyPart
+    species: vox
+    partType: Head
+    vital: true
+  - type: Input
+    context: "ghost"
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobVoxHead
+    state:
+      incisable: true
+      endoSkeleton: true
+    container: true
+  - type: Tag
+    tags:
+    - Head
   - type: Extractable
     juiceSolution:
       reagents:
       - ReagentId: Fat
         Quantity: 5
-      - ReagentId: AmmoniaBlood
+      - ReagentId: Blood
         Quantity: 10
 
 - type: entity
@@ -52,7 +93,14 @@
   name: "left vox arm"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "l_arm"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "l_arm"
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobVoxLArm
 
 - type: entity
   parent: [ PartVox, BaseRightArm ]
@@ -60,7 +108,14 @@
   name: "right vox arm"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "r_arm"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "r_arm"
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobVoxRArm
 
 - type: entity
   parent: [ PartVox, BaseLeftHand ]
@@ -68,7 +123,14 @@
   name: "left vox hand"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "l_hand"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "l_hand"
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobVoxLHand
 
 - type: entity
   parent: [ PartVox, BaseRightHand ]
@@ -76,7 +138,14 @@
   name: "right vox hand"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "r_hand"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "r_hand"
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobVoxRHand
 
 - type: entity
   parent:  [ PartVox, BaseLeftLeg ]
@@ -84,7 +153,15 @@
   name: "left vox leg"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "l_leg"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "l_leg"
+  - type: MovementBodyPart
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobVoxLLeg
 
 - type: entity
   parent:  [ PartVox, BaseRightLeg ]
@@ -92,7 +169,15 @@
   name: "right vox leg"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "r_leg"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "r_leg"
+  - type: MovementBodyPart
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobVoxRLeg
 
 - type: entity
   parent: [ PartVox, BaseLeftFoot ]
@@ -100,7 +185,14 @@
   name: "left vox foot"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "l_foot"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "l_foot"
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobVoxLFoot
 
 - type: entity
   parent: [ PartVox, BaseRightFoot ]
@@ -108,4 +200,29 @@
   name: "right vox foot"
   components:
   - type: Sprite
+    sprite: Mobs/Species/Vox/parts.rsi
     state: "r_foot"
+  - type: Icon
+    sprite: Mobs/Species/Vox/parts.rsi
+    state: "r_foot"
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobVoxRFoot
+
+- type: entity
+  id: TailVox
+  name: vox tail
+  parent: PartVox
+  components:
+  - type: Sprite
+    netsync: true
+    sprite: Mobs/Customization/vox_parts.rsi
+    state: tail_icon
+  - type: Icon
+    sprite: Mobs/Customization/vox_parts.rsi
+    state: tail_icon
+  - type: BodyPart
+    partType: Tail
+  - type: SurgeryBodyPart
+    visuals:
+      speciesSprite: MobHumanoidAnyMarking
