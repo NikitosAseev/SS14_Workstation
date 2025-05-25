@@ -42,5 +42,6 @@ public static class IgnoredSecretComponents
         "SurgerySmallClamp",
         "SurgerySuture",
         "SurgeryHardSuture",
+        "TargetDoll",
     };
 }
