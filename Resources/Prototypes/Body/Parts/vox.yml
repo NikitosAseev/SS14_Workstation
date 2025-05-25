@@ -29,7 +29,6 @@
   parent: [PartVox, BaseTorso]
   id: TorsoVox
   name: "vox torso"
-  parent: [ BaseTorso, PartVox]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
@@ -57,7 +56,6 @@
   parent: [ PartVox, BaseHead ]
   id: HeadVox
   name: "vox head"
-  parent: [BaseHead, PartVox]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
@@ -93,7 +91,6 @@
   parent: [ PartVox, BaseLeftArm ]
   id: LeftArmVox
   name: "left vox arm"
-  parent: [BaseLeftArm, PartVox]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
@@ -109,7 +106,6 @@
   parent: [ PartVox, BaseRightArm ]
   id: RightArmVox
   name: "right vox arm"
-  parent: [BaseRightArm, PartVox]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
@@ -125,7 +121,6 @@
   parent: [ PartVox, BaseLeftHand ]
   id: LeftHandVox
   name: "left vox hand"
-  parent: [BaseLeftHand, PartVox]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
@@ -141,7 +136,6 @@
   parent: [ PartVox, BaseRightHand ]
   id: RightHandVox
   name: "right vox hand"
-  parent: [BaseRightHand, PartVox]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
@@ -157,7 +151,6 @@
   parent:  [ PartVox, BaseLeftLeg ]
   id: LeftLegVox
   name: "left vox leg"
-  parent: [ PartVox, BaseLeftLeg ]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
@@ -174,7 +167,6 @@
   parent:  [ PartVox, BaseRightLeg ]
   id: RightLegVox
   name: "right vox leg"
-  parent: [ PartVox, BaseRightLeg ]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
@@ -191,7 +183,6 @@
   parent: [ PartVox, BaseLeftFoot ]
   id: LeftFootVox
   name: "left vox foot"
-  parent: [BaseLeftFoot, PartVox]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
@@ -207,7 +198,6 @@
   parent: [ PartVox, BaseRightFoot ]
   id: RightFootVox
   name: "right vox foot"
-  parent: [BaseRightFoot, PartVox]
   components:
   - type: Sprite
     sprite: Mobs/Species/Vox/parts.rsi
