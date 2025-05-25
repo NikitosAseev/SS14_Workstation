@@ -1,10 +1,10 @@
 ﻿# TODO: Add descriptions (many)
 # TODO BODY: Part damage
 - type: entity
-  id: PartVox
-  parent: BaseItem
-  name: "vox body part"
   abstract: true
+  parent: [ BaseItem, BasePart ]
+  id: PartVox
+  name: "vox body part"
   components:
   - type: Damageable
     damageContainer: Biological
@@ -22,10 +22,11 @@
       reagents:
       - ReagentId: Fat
         Quantity: 3
-      - ReagentId: Blood
+      - ReagentId: AmmoniaBlood
         Quantity: 10
 
 - type: entity
+  parent: [PartVox, BaseTorso]
   id: TorsoVox
   name: "vox torso"
   parent: [ BaseTorso, PartVox]
@@ -53,6 +54,7 @@
         Quantity: 10
 
 - type: entity
+  parent: [ PartVox, BaseHead ]
   id: HeadVox
   name: "vox head"
   parent: [BaseHead, PartVox]
@@ -88,6 +90,7 @@
         Quantity: 10
 
 - type: entity
+  parent: [ PartVox, BaseLeftArm ]
   id: LeftArmVox
   name: "left vox arm"
   parent: [BaseLeftArm, PartVox]
@@ -103,6 +106,7 @@
       speciesSprite: MobVoxLArm
 
 - type: entity
+  parent: [ PartVox, BaseRightArm ]
   id: RightArmVox
   name: "right vox arm"
   parent: [BaseRightArm, PartVox]
@@ -118,6 +122,7 @@
       speciesSprite: MobVoxRArm
 
 - type: entity
+  parent: [ PartVox, BaseLeftHand ]
   id: LeftHandVox
   name: "left vox hand"
   parent: [BaseLeftHand, PartVox]
@@ -133,6 +138,7 @@
       speciesSprite: MobVoxLHand
 
 - type: entity
+  parent: [ PartVox, BaseRightHand ]
   id: RightHandVox
   name: "right vox hand"
   parent: [BaseRightHand, PartVox]
@@ -148,6 +154,7 @@
       speciesSprite: MobVoxRHand
 
 - type: entity
+  parent:  [ PartVox, BaseLeftLeg ]
   id: LeftLegVox
   name: "left vox leg"
   parent: [ PartVox, BaseLeftLeg ]
@@ -164,6 +171,7 @@
       speciesSprite: MobVoxLLeg
 
 - type: entity
+  parent:  [ PartVox, BaseRightLeg ]
   id: RightLegVox
   name: "right vox leg"
   parent: [ PartVox, BaseRightLeg ]
@@ -180,6 +188,7 @@
       speciesSprite: MobVoxRLeg
 
 - type: entity
+  parent: [ PartVox, BaseLeftFoot ]
   id: LeftFootVox
   name: "left vox foot"
   parent: [BaseLeftFoot, PartVox]
@@ -195,6 +204,7 @@
       speciesSprite: MobVoxLFoot
 
 - type: entity
+  parent: [ PartVox, BaseRightFoot ]
   id: RightFootVox
   name: "right vox foot"
   parent: [BaseRightFoot, PartVox]

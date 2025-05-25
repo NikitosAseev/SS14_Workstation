@@ -11,12 +11,6 @@
     - HeadTop
   - type: Hunger
   - type: Thirst
-  # Exodus-MothLore-Start | Stamina
-  - type: Stamina
-    baseDecay: 13
-  - type: StaminaArmor
-    coefficient: 1.1
-  # Exodus-Stamina-End
   - type: Icon
     sprite: Mobs/Species/Moth/parts.rsi
     state: full
@@ -56,7 +50,7 @@
   - type: MovementSpeedModifier
     weightlessAcceleration: 1.5 # Move around more easily in space.
     weightlessFriction: 1
-    weightlessModifier: 1
+    baseWeightlessModifier: 1
   - type: Flammable
     damage:
       types:
@@ -129,9 +123,54 @@
       jumpsuit:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Human/displacement.rsi
+            sprite: Mobs/Species/Moth/displacement.rsi
             state: jumpsuit-female
-
+      back:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: back
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: outerclothing
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: hand
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: shoes
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: jumpsuit-male
+      back:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: back
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: outerclothing
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: hand
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: shoes
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -146,6 +185,51 @@
       jumpsuit:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Human/displacement.rsi
+            sprite: Mobs/Species/Moth/displacement.rsi
             state: jumpsuit-female
-
+      back:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: back
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: outerclothing
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: hand
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: shoes
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: jumpsuit-male
+      back:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: back
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: outerclothing
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: hand
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: shoes
