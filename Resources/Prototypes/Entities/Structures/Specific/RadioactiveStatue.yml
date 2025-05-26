@@ -9,7 +9,7 @@
     sprite: Structures/Specific/RadioactiveStatue.rsi
     state: base
   - type: RadiationSource
-    intensity: 3.4
+    intensity: 2.5
   - type: Destructible
     thresholds:
     - trigger:
