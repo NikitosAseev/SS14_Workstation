@@ -1,4 +1,5 @@
 using Content.Shared.SS220.TTS;
+using Content.Shared.DisplacementMap;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Inventory;
@@ -108,17 +109,24 @@ public sealed partial class HumanoidAppearanceComponent : Component
 
     [DataField]
     public ProtoId<MarkingPrototype>? UndergarmentBottom = new ProtoId<MarkingPrototype>("UndergarmentBottomBoxers");
+
+    /// <summary>
+    ///     The displacement maps that will be applied to specific layers of the humanoid.
+    /// </summary>
+    [DataField]
+    public Dictionary<HumanoidVisualLayers, DisplacementData> MarkingsDisplacement = new();
 }
 
 [DataDefinition]
 [Serializable, NetSerializable]
 public readonly partial struct CustomBaseLayerInfo
 {
-    public CustomBaseLayerInfo(string? id, Color? color = null)
+    public CustomBaseLayerInfo(string? id, bool overrideColor = false, Color? color = null)
     {
-        DebugTools.Assert(id == null || IoCManager.Resolve<IPrototypeManager>().HasIndex<HumanoidSpeciesSpriteLayer>(id));
+        // DebugTools.Assert(id == null || IoCManager.Resolve<IPrototypeManager>().HasIndex<HumanoidSpeciesSpriteLayer>(id));
         Id = id;
         Color = color;
+        OverrideColor = overrideColor;
     }
 
     /// <summary>
@@ -132,4 +140,7 @@ public readonly partial struct CustomBaseLayerInfo
     /// </summary>
     [DataField]
     public Color? Color { get; init; }
+
+    [DataField]
+    public bool OverrideColor { get; init; }
 }

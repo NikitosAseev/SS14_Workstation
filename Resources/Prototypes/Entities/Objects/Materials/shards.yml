@@ -5,6 +5,8 @@
   description: It's a shard of some unknown material.
   components:
   - type: Sharp
+  - type: SurgeryTool
+  - type: SurgeryIncisor
   - type: Execution
     doAfterDuration: 4.0
   - type: Sprite
@@ -69,7 +71,8 @@
   - type: Slippery
     slipSound:
       path: /Audio/Effects/glass_step.ogg
-    launchForwardsMultiplier: 0
+    slipData:
+      launchForwardsMultiplier: 0
   - type: TriggerOnStepTrigger
   - type: DamageUserOnTrigger
     damage:

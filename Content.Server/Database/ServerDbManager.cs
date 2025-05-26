@@ -367,11 +367,11 @@ namespace Content.Server.Database
 
         #region RPSX
 
-        Task<string?> GetAdditionalSponsorTier(NetUserId userId);
-        Task ChangeAdditionalSponsorTier(NetUserId userId, SponsorTier? tier = null, int days = 0);
+        Task<SponsorTier?> GetAdditionalSponsorTier(NetUserId userId);
+        Task ChangeAdditionalSponsorTier(NetUserId userId, SponsorTier tier, int days = 0, bool remove = false);
         Task<BankAccountComponent?> GetProfileEconomics(NetUserId userId, int slot);
         Task SaveProfileEconomics(NetUserId userId, int slot, BankAccountComponent bank);
-        Task<bool> IsDiscordVerifiedAsync(NetUserId userId);
+        // Task<bool> IsDiscordVerifiedAsync(NetUserId userId);
 
         #endregion
     }
@@ -418,10 +418,12 @@ namespace Content.Server.Database
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly IResourceManager _res = default!;
         [Dependency] private readonly ILogManager _logMgr = default!;
+        [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
         private ServerDbBase _db = default!;
         private LoggingProvider _msLogProvider = default!;
         private ILoggerFactory _msLoggerFactory = default!;
+        private ISawmill _sawmill = default!;
 
         private bool _synchronous;
         // When running in integration tests, we'll use a single in-memory SQLite database connection.
@@ -437,6 +439,7 @@ namespace Content.Server.Database
             {
                 builder.AddProvider(_msLogProvider);
             });
+            _sawmill = _logMgr.GetSawmill("db.manager");
 
             _synchronous = _cfg.GetCVar(CCVars.DatabaseSynchronous);
 
@@ -447,11 +450,11 @@ namespace Content.Server.Database
             {
                 case "sqlite":
                     SetupSqlite(out var contextFunc, out var inMemory);
-                    _db = new ServerDbSqlite(contextFunc, inMemory, _cfg, _synchronous, opsLog);
+                    _db = new ServerDbSqlite(contextFunc, inMemory, _cfg, _synchronous, opsLog, _prototypeManager);
                     break;
                 case "postgres":
                     var (pgOptions, conString) = CreatePostgresOptions();
-                    _db = new ServerDbPostgres(pgOptions, conString, _cfg, opsLog, notifyLog);
+                    _db = new ServerDbPostgres(pgOptions, conString, _cfg, opsLog, notifyLog, _prototypeManager);
                     break;
                 default:
                     throw new InvalidDataException($"Unknown database engine {engine}.");
@@ -1057,15 +1060,15 @@ namespace Content.Server.Database
 
         #region RPSX
 
-        public Task<string?> GetAdditionalSponsorTier(NetUserId userId)
+        public Task<SponsorTier?> GetAdditionalSponsorTier(NetUserId userId)
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetAdditionalSponsorTier(userId));
         }
-        public Task ChangeAdditionalSponsorTier(NetUserId userId, SponsorTier? tier = null, int days = 0)
+        public Task ChangeAdditionalSponsorTier(NetUserId userId, SponsorTier tier, int days = 0, bool remove = false)
         {
             DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.ChangeAdditionalSponsorTier(userId, tier, days));
+            return RunDbCommand(() => _db.ChangeAdditionalSponsorTier(userId, tier, days, remove));
         }
         public Task<BankAccountComponent?> GetProfileEconomics(NetUserId userId, int slot)
         {
@@ -1078,11 +1081,11 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.SaveProfileEconomics(userId, slot, bank));
         }
 
-        public Task<bool> IsDiscordVerifiedAsync(NetUserId userId)
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.IsDiscordVerifiedAsync(userId));
-        }
+        // public Task<bool> IsDiscordVerifiedAsync(NetUserId userId)
+        // {
+        //     DbReadOpsMetric.Inc();
+        //     return RunDbCommand(() => _db.IsDiscordVerifiedAsync(userId));
+        // }
 
         #endregion
 
@@ -1189,7 +1192,7 @@ namespace Content.Server.Database
                 Password = pass
             }.ConnectionString;
 
-            Logger.DebugS("db.manager", $"Using Postgres \"{host}:{port}/{db}\"");
+            _sawmill.Debug($"Using Postgres \"{host}:{port}/{db}\"");
 
             builder.UseNpgsql(connectionString);
             SetupLogging(builder);
@@ -1212,12 +1215,12 @@ namespace Content.Server.Database
             if (!inMemory)
             {
                 var finalPreferencesDbPath = Path.Combine(_res.UserData.RootDir!, configPreferencesDbPath);
-                Logger.DebugS("db.manager", $"Using SQLite DB \"{finalPreferencesDbPath}\"");
+                _sawmill.Debug($"Using SQLite DB \"{finalPreferencesDbPath}\"");
                 getConnection = () => new SqliteConnection($"Data Source={finalPreferencesDbPath}");
             }
             else
             {
-                Logger.DebugS("db.manager", "Using in-memory SQLite DB");
+                _sawmill.Debug("Using in-memory SQLite DB");
                 _sqliteInMemoryConnection = new SqliteConnection("Data Source=:memory:");
                 // When using an in-memory DB we have to open it manually
                 // so EFCore doesn't open, close and wipe it every operation.

@@ -5,7 +5,6 @@ using Content.Server.Medical.Components;
 using Content.Server.Popups;
 using Content.Server.Stack;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.Audio;
 using Content.Shared.Damage;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
@@ -21,6 +20,7 @@ using Content.Shared.Popups;
 using Content.Shared.Stacks;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Random;
+using Robust.Shared.Audio;
 
 namespace Content.Server.Medical;
 
@@ -31,7 +31,6 @@ public sealed class HealingSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly StackSystem _stacks = default!;
     [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
     [Dependency] private readonly MobThresholdSystem _mobThresholdSystem = default!;
@@ -56,12 +55,12 @@ public sealed class HealingSystem : EntitySystem
         if (args.Handled || args.Cancelled)
             return;
 
-        if (healing.DamageContainers is not null &&
-            entity.Comp.DamageContainerID is not null &&
-            !healing.DamageContainers.Contains(entity.Comp.DamageContainerID))
-        {
-            return;
-        }
+        // if (healing.DamageContainers is not null &&
+        //     entity.Comp.DamageContainerID is not null &&
+        //     !healing.DamageContainers.Contains(entity.Comp.DamageContainerID))
+        // {
+        //     return;
+        // }
 
         // Heal some bloodloss damage.
         if (healing.BloodlossModifier != 0)
@@ -85,8 +84,8 @@ public sealed class HealingSystem : EntitySystem
 
         var healed = _damageable.TryChangeDamage(entity.Owner, healing.Damage * _damageable.UniversalTopicalsHealModifier, true, origin: args.Args.User);
 
-        if (healed == null && healing.BloodlossModifier != 0)
-            return;
+        // if (healed == null && healing.BloodlossModifier != 0)
+        //     return;
 
         var total = healed?.GetTotal() ?? FixedPoint2.Zero;
 
@@ -115,13 +114,18 @@ public sealed class HealingSystem : EntitySystem
                 $"{EntityManager.ToPrettyString(args.User):user} healed themselves for {total:damage} damage");
         }
 
-        _audio.PlayPvs(healing.HealingEndSound, entity.Owner, AudioHelpers.WithVariation(0.125f, _random).WithVolume(1f));
+        _audio.PlayPvs(healing.HealingEndSound, entity.Owner);
 
         // Logic to determine the whether or not to repeat the healing action
         args.Repeat = (HasDamage(entity, healing) && !dontRepeat);
         if (!args.Repeat && !dontRepeat)
             _popupSystem.PopupEntity(Loc.GetString("medical-item-finished-using", ("item", args.Used)), entity.Owner, args.User);
         args.Handled = true;
+
+        // RPSX Surgery Start
+        var ev = new EntityHealedEvent(total);
+        RaiseLocalEvent(entity.Owner, ref ev);
+        // RPSX Surgery End
     }
 
     private bool HasDamage(Entity<DamageableComponent> ent, HealingComponent healing)
@@ -198,8 +202,7 @@ public sealed class HealingSystem : EntitySystem
             return false;
         }
 
-        _audio.PlayPvs(component.HealingBeginSound, uid,
-                AudioHelpers.WithVariation(0.125f, _random).WithVolume(1f));
+        _audio.PlayPvs(component.HealingBeginSound, uid);
 
         var isNotSelf = user != target;
 
