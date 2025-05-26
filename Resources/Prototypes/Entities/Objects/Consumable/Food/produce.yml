@@ -313,6 +313,23 @@
         Blunt: 5 # The nettle will "wilt" after 5 hits.
 
 - type: entity
+  name: веник для бани
+  description: веник для того чтобы парится. главное чтобы он был не в льду
+  id: broom
+  parent: ProduceBase
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/nettle.rsi
+  - type: Item
+    size: Small
+    sprite: Objects/Specific/Hydroponics/nettle.rsi
+    heldPrefix: produce
+  - type: MeleeWeapon
+    damage:
+      types:
+        Heat: 0.5
+
+- type: entity
   name: banana
   parent: FoodProduceBase
   id: FoodBanana
