@@ -12729,14 +12729,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 20.436245,63.610924
       parent: 5227
-- proto: BorgModuleDefibrillator
-  entities:
-  - uid: 8430
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 19.42062,63.579674
-      parent: 5227
 - proto: BorgModuleFireExtinguisher
   entities:
   - uid: 8434
@@ -12760,14 +12752,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 21.600056,63.54706
-      parent: 5227
-- proto: BorgModuleGrapplingGun
-  entities:
-  - uid: 8426
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 22.725056,63.39081
       parent: 5227
 - proto: BorgModuleHarvesting
   entities:
@@ -12824,14 +12808,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 18.63937,63.5328
-      parent: 5227
-- proto: BorgModuleTreatment
-  entities:
-  - uid: 8427
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 19.48312,63.610924
       parent: 5227
 - proto: BoxBeaker
   entities:
