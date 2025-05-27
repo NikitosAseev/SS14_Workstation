@@ -95,7 +95,6 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         Entity<HumanoidAppearanceComponent, SpriteComponent> entity,
         HumanoidVisualLayers key,
         string? protoId,
-        bool ignoreSkinByCustom,
         bool sexMorph = false,
         Color? color = null)
     {
@@ -118,7 +117,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         var proto = _prototypeManager.Index<HumanoidSpeciesSpriteLayer>(protoId);
         component.BaseLayers[key] = proto;
 
-        if (proto.MatchSkin && !ignoreSkinByCustom)
+        if (proto.MatchSkin)
             layer.Color = component.SkinColor.WithAlpha(proto.LayerAlpha);
 
         if (proto.BaseSprite != null)

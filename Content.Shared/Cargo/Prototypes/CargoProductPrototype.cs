@@ -94,5 +94,9 @@ namespace Content.Shared.Cargo.Prototypes
         /// </summary>
         [DataField]
         public ProtoId<CargoMarketPrototype> Group { get; private set; } = "market";
+
+        //The prototype can be purchased
+        [DataField]
+        public bool Enabled { get; set; } = true;
     }
 }
