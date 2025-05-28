@@ -1,8 +1,8 @@
-ent-SpawnMobWatcherIcewing = Watcher Icewing Spawner
+ent-SpawnMobWatcherIcewing = спаунер ледяного наблюдателя
     .desc = { ent-MarkerBase.desc }
-ent-SpawnMobWatcherLavaland = Watcher Lavaland Spawner
+ent-SpawnMobWatcherLavaland = спаунер наблюдателя лаваленда
     .desc = { ent-MarkerBase.desc }
-ent-SpawnMobWatcherMagmawing = Watcher Magmawing Spawner
+ent-SpawnMobWatcherMagmawing = спаунер магмового наблюдателя
     .desc = { ent-MarkerBase.desc }
-ent-SpawnMobWatcherPride = Watcher Pride Spawner
+ent-SpawnMobWatcherPride = спаунер гордого наблюдателя
     .desc = { ent-MarkerBase.desc }
