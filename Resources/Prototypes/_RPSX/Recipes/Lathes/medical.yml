@@ -1,0 +1,82 @@
+# Med priner
+
+- type: latheRecipe
+  id: LeftSynthArmHand
+  parent: BaseSurgicalRecipe
+  result: LeftSynthArmHand
+  completetime: 3
+  materials:
+    Steel: 200
+    SyntheticCloth: 200
+
+
+- type: latheRecipe
+  id: RightSynthArmHand
+  parent: BaseSurgicalRecipe
+  result: RightSynthArmHand
+  completetime: 3
+  materials:
+    Steel: 200
+    SyntheticCloth: 200
+
+
+- type: latheRecipe
+  id: LeftSynthLegFoot
+  parent: BaseSurgicalRecipe
+  result: LeftSynthLegFoot
+  completetime: 3
+  materials:
+    Steel: 200
+    SyntheticCloth: 200
+
+
+- type: latheRecipe
+  id: RightSynthLegFoot
+  parent: BaseSurgicalRecipe
+  result: RightSynthLegFoot
+  completetime: 3
+  materials:
+    Steel: 200
+    SyntheticCloth: 200
+
+
+- type: latheRecipe
+  id: LeftDrillArmHand
+  result: LeftDrillArmHand
+  completetime: 3
+  materials:
+    Steel: 500
+    SyntheticCloth: 200
+
+- type: latheRecipe
+  id: RightDrillArmHand
+  result: RightDrillArmHand
+  completetime: 3
+  materials:
+    Steel: 500
+    SyntheticCloth: 200
+
+- type: latheRecipe
+  id: LeftPowerLegFoot
+  result: LeftPowerLegFoot
+  completetime: 3
+  materials:
+    Steel: 500
+    SyntheticCloth: 200
+
+- type: latheRecipe
+  id: RightPowerLegFoot
+  result: RightPowerLegFoot
+  completetime: 3
+  materials:
+    Steel: 500
+    SyntheticCloth: 200
+
+- type: latheRecipe
+  id: MedicalPrinterCircuitboard
+  result: MedicalPrinterCircuitboard
+  completetime: 2
+  materials:
+    Steel: 200
+    SyntheticCloth: 200
+

@@ -1,0 +1,19 @@
+## Static
+
+- type: latheRecipePack
+  id: PrinterStaticLathePack
+  recipes:
+  - LeftSynthArmHand
+  - RightSynthArmHand
+  - LeftSynthLegFoot
+  - RightSynthLegFoot
+
+## Dynamic
+
+- type: latheRecipePack
+  id: AdvensedPrinterLathePack
+  recipes:
+  - LeftDrillArmHand
+  - RightDrillArmHand
+  - LeftPowerLegFoot
+  - RightPowerLegFoot
