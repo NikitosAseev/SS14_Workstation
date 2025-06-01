@@ -1,2 +1,2 @@
 screen-text = Экранный текст
-screen-color = Эекранный цвет
+screen-color = Экранный цвет
