@@ -6,7 +6,7 @@ construction-graph-tag-clown-mask = клоунская маска
 construction-graph-tag-clown-recorder = клоунский диктофон
 construction-graph-tag-clown-bike-horn = клаксон
 construction-graph-tag-clowne-horn = сломанный клаксон
-construction-graph-tag-happy-honk-meal = весёлый ХОНК-набор 
+construction-graph-tag-happy-honk-meal = весёлый ХОНК-набор
 construction-graph-tag-woeful-cluwne-meal = ужасный ХОНК-набор
 # mime
 construction-graph-tag-suspenders = подтяжки
