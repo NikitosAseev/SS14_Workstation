@@ -18,10 +18,10 @@
 
 ## Dynamic
 
-#- type: latheRecipePack               # == saved for later ==
-#  id: AdvensedPrinterLathePack
-#  recipes:
-#  - LeftDrillArmHand
-#  - RightDrillArmHand
-#  - LeftPowerLegFoot
-#  - RightPowerLegFoot
+- type: latheRecipePack
+  id: AdvensedPrinterLathePack
+  recipes:
+  - LeftDrillArmHand
+  - RightDrillArmHand
+  - LeftPowerLegFoot
+  - RightPowerLegFoot
