@@ -1,44 +1,58 @@
 # Med priner
 
-- type: latheRecipe
-  id: LeftSynthArmHand
-  parent: BaseSurgicalRecipe
-  result: LeftSynthArmHand
-  completetime: 3
+- type: latheRecipe          # added in MedicalBoardsStatic (pack)
+  id: MedicalPrinterCircuitboard
+  result: MedicalPrinterCircuitboard
+  completetime: 2
   materials:
     Steel: 200
-    SyntheticCloth: 200
+
+
+# Base
+- type: latheRecipe
+  abstract: true
+  parent: BaseToolRecipe
+  id: BasiProstheticRecipe
+  materials:
+    Steel: 200
+    Plastic: 200
+    Cloth: 200
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseToolRecipe
+  id: BasiOrganRecipe
+  materials:
+    Steel: 10
+    Plastic: 200
+    Cloth: 200
+
+#prosthetics
+
+- type: latheRecipe
+  id: LeftSynthArmHand
+  parent: BasiProstheticRecipe
+  result: LeftSynthArmHand
 
 
 - type: latheRecipe
   id: RightSynthArmHand
-  parent: BaseSurgicalRecipe
+  parent: BasiProstheticRecipe
   result: RightSynthArmHand
-  completetime: 3
-  materials:
-    Steel: 200
-    SyntheticCloth: 200
 
 
 - type: latheRecipe
   id: LeftSynthLegFoot
-  parent: BaseSurgicalRecipe
+  parent: BasiProstheticRecipe
   result: LeftSynthLegFoot
-  completetime: 3
-  materials:
-    Steel: 200
-    SyntheticCloth: 200
 
 
 - type: latheRecipe
   id: RightSynthLegFoot
-  parent: BaseSurgicalRecipe
+  parent: BasiProstheticRecipe
   result: RightSynthLegFoot
-  completetime: 3
-  materials:
-    Steel: 200
-    SyntheticCloth: 200
 
+# implants
 
 - type: latheRecipe
   id: LeftDrillArmHand
@@ -46,7 +60,7 @@
   completetime: 3
   materials:
     Steel: 500
-    SyntheticCloth: 200
+    Cloth: 200
 
 - type: latheRecipe
   id: RightDrillArmHand
@@ -72,11 +86,36 @@
     Steel: 500
     SyntheticCloth: 200
 
-- type: latheRecipe
-  id: MedicalPrinterCircuitboard
-  result: MedicalPrinterCircuitboard
-  completetime: 2
-  materials:
-    Steel: 200
-    SyntheticCloth: 200
+# Synth organs
 
+
+- type: latheRecipe
+  id: OrganSynthEyes
+  parent: BasiOrganRecipe
+  result: OrganSynthEyes
+
+
+- type: latheRecipe
+  id: OrganSynthLungs
+  parent: BasiOrganRecipe
+  result: OrganSynthLungs
+
+- type: latheRecipe
+  id: OrganSynthHeart
+  parent: BasiOrganRecipe
+  result: OrganSynthHeart
+
+- type: latheRecipe
+  id: OrganSynthStomach
+  parent: BasiOrganRecipe
+  result: OrganSynthStomach
+
+- type: latheRecipe
+  id: OrganSynthLiver
+  parent: BasiOrganRecipe
+  result: OrganSynthLiver
+
+- type: latheRecipe
+  id: OrganSynthKidneys
+  parent: BasiOrganRecipe
+  result: OrganSynthKidneys

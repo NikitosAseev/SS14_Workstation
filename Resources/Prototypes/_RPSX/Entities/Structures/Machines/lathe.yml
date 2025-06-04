@@ -21,9 +21,7 @@
     idleState: icon
     runningState: icon
     staticPacks:
-    - PrinterStaticLathePack
-    dynamicPacks:
-    - AdvensedPrinterLathePack
+    - PrinterLatheStaticPack
   - type: Machine
     board: MedicalPrinterCircuitboard
   - type: OreSiloClient

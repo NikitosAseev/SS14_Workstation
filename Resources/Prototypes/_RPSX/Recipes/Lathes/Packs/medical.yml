@@ -1,19 +1,27 @@
 ## Static
 
 - type: latheRecipePack
-  id: PrinterStaticLathePack
+  id: PrinterLatheStaticPack
   recipes:
+  # limb
   - LeftSynthArmHand
   - RightSynthArmHand
   - LeftSynthLegFoot
   - RightSynthLegFoot
+  # Organs
+  - OrganSynthEyes
+  - OrganSynthLungs
+  - OrganSynthHeart
+  - OrganSynthStomach
+  - OrganSynthLiver
+  - OrganSynthKidneys
 
 ## Dynamic
 
-- type: latheRecipePack
-  id: AdvensedPrinterLathePack
-  recipes:
-  - LeftDrillArmHand
-  - RightDrillArmHand
-  - LeftPowerLegFoot
-  - RightPowerLegFoot
+#- type: latheRecipePack               # == saved for later ==
+#  id: AdvensedPrinterLathePack
+#  recipes:
+#  - LeftDrillArmHand
+#  - RightDrillArmHand
+#  - LeftPowerLegFoot
+#  - RightPowerLegFoot
