@@ -7,7 +7,7 @@
     - type: Sprite
       state: medical
     - type: MachineBoard
-      prototype: MedicalTechFab
+      prototype: MedicalPrinter
       stackRequirements:
         MatterBin: 2
         Manipulator: 2

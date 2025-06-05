@@ -92,6 +92,11 @@
   id: OrganSynthEyes
   parent: BaseOrganRecipe
   result: OrganSynthEyes
+  materials:
+    Glass: 200
+    Steel: 10
+    Plastic: 100
+    Cloth: 100
 
 - type: latheRecipe
   id: OrganSynthLungs

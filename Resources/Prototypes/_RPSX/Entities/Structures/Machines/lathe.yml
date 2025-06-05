@@ -5,11 +5,11 @@
   description: A machine.
   components:
   - type: Sprite
-    sprite: Structures/Machines/techfab.rsi
+    sprite: _RPSX/MainGame/Structures/Machines/medical-printer.rsi
+    snapCardinals: true
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
-    - state: med
     - state: unlit
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
@@ -19,13 +19,17 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Lathe
     idleState: icon
-    runningState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
     staticPacks:
     - PrinterLatheStaticPack
     dynamicPacks:
     - AdvensedPrinterLathePack
   - type: Machine
     board: MedicalPrinterCircuitboard
+  - type: StealTarget
+    stealGroup: MedicalPrinterCircuitboard
   - type: OreSiloClient
   - type: LatheAnnouncing
     channels: [Medical]
