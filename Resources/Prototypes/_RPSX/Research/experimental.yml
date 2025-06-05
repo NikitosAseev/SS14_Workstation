@@ -2,9 +2,9 @@
 
 - type: technology
   id: BasicProsthetics
-  name: basic-prosthetics
+  name: research-technology-basic-prosthetics
   icon:
-    sprite: DarkStation/MainGame/Mobs/Species/Bionic/Parts/drill_arm.rsi
+    sprite: Mobs/Species/Bionic/parts.rsi
     state: l_arm_icon
   discipline: Experimental
   tier: 1
@@ -16,9 +16,9 @@
 
 - type: technology
   id: AdvancedProsthetics
-  name: advanced-prosthetics
+  name: research-technology-advanced-prosthetics
   icon:
-    sprite: Mobs/Species/Bionic/parts.rsi
+    sprite: DarkStation/MainGame/Mobs/Species/Bionic/Parts/drill_arm.rsi
     state: l_arm_icon
   discipline: Experimental
   tier: 2
