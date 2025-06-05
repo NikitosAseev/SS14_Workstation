@@ -1,13 +1,13 @@
-# - type: species
-#   id: Nucleation
-#   name: Нуклеация
-#   roundStart: true
-#   prototype: MobNucleation
-#   sprites: MobNucleanSprites
-#   markingLimits: MobNucleanMarkingLimits
-#   dollPrototype: MobNucleanDummy
-#   skinColoration: HumanToned
-#   sponsorOnly: true
+- type: species
+  id: Nucleation
+  name: Нуклеация
+  roundStart: true
+  prototype: MobNucleation
+  sprites: MobNucleanSprites
+  markingLimits: MobNucleanMarkingLimits
+  dollPrototype: MobNucleanDummy
+  skinColoration: HumanToned
+  sponsorOnly: true
 
 # Отсутствие слоя означает, что
 # у этого человека не может быть ничего, что начиналось бы по кругу.
