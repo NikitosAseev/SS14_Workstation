@@ -26,6 +26,8 @@ construction-graph-tag-medical-hud = медицинский визор
 construction-graph-tag-sun-glasses = солнцезащитные очки
 construction-graph-tag-security-helmet = шлем СБ
 # materials
+construction-graph-tag-manipulator = modular machine part
+# materials
 construction-graph-tag-capacitor = конденсатор
 construction-graph-tag-voice-trigger = голосовой триггер
 construction-graph-tag-signal-trigger = сигнальный триггер
