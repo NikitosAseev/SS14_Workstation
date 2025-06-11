@@ -1,7 +1,7 @@
 ﻿using Content.Shared.FixedPoint;
 using Robust.Shared.GameObjects;
 
-namespace Content.Server.RPSX.DarkForces.Saint.Reagent.Events;
+namespace Content.Shared.RPSX.DarkForces.Saint.Reagent.Events;
 
 /**
  * Событие прокидывается, когда святая вода выпита.

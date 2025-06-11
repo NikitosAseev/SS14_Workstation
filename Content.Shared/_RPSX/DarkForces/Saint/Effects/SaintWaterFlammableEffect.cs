@@ -1,10 +1,10 @@
-using Content.Server.RPSX.DarkForces.Saint.Reagent.Events;
+using Content.Shared.RPSX.DarkForces.Saint.Reagent.Events;
 using Content.Shared.EntityEffects;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Log;
 
-namespace Content.Server.RPSX.DarkForces.Saint.Reagent;
+namespace Content.Shared.RPSX.DarkForces.Saint.Reagent;
 
 public sealed partial class SaintWaterFlammableEffect : EntityEffect
 {

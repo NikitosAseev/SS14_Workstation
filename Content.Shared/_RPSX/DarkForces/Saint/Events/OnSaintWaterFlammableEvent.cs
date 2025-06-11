@@ -2,7 +2,7 @@
 using Content.Shared.FixedPoint;
 using Robust.Shared.GameObjects;
 
-namespace Content.Server.RPSX.DarkForces.Saint.Reagent.Events;
+namespace Content.Shared.RPSX.DarkForces.Saint.Reagent.Events;
 
 /**
  * Вызывается, если у сущности есть Flammable в Reactive компоненте

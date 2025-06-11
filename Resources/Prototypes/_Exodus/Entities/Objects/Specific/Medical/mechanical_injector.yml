@@ -10,7 +10,7 @@
       effectsAfterInjection:
         - !type:Emote
           conditions:
-            - !type:HasTags
+            - !type:HasTag
               tags:
                 - ThickSkin
               invert: true
@@ -19,7 +19,7 @@
           showInChat: true
         - !type:HealthChange
           conditions:
-            - !type:HasTags
+            - !type:HasTag
               tags:
                 - ThickSkin
               invert: true
@@ -29,7 +29,7 @@
               Piercing: 10
         - !type:ModifyBleedAmount
           conditions:
-            - !type:HasTags
+            - !type:HasTag
               tags:
                 - ThickSkin
               invert: true
@@ -37,7 +37,7 @@
           amount: 5
         - !type:PopupMessage
           conditions:
-            - !type:HasTags
+            - !type:HasTag
               tags:
                 - ThickSkin
               invert: true
