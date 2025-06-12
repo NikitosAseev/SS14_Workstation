@@ -1,3 +1,4 @@
+using Content.Shared.Actions.Components;
 using Content.Shared.Actions.Events;
 using Content.Shared.Popups;
 using Robust.Shared.Timing;
@@ -68,7 +69,7 @@ public sealed class ConfirmableActionSystem : EntitySystem
         //RPSX edit start | Popup spam fix
         if (_entityManager.TryGetComponent<InstantActionComponent>(uid, out var action))
         {
-            if(action.Cooldown.HasValue && _timing.CurTime < action.Cooldown.Value.End)
+            if (action.Event != null && action.Event.Action.Comp.Cooldown.HasValue && _timing.CurTime < action.Event?.Action.Comp.Cooldown.Value.End)
                 return;
         }
         //RPSX edit end
