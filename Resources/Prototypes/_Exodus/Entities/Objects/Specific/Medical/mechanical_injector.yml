@@ -11,8 +11,7 @@
         - !type:Emote
           conditions:
             - !type:HasTag
-              tags:
-                - ThickSkin
+              tag: ThickSkin
               invert: true
             - !type:IsMob
           emote: Scream
@@ -20,8 +19,7 @@
         - !type:HealthChange
           conditions:
             - !type:HasTag
-              tags:
-                - ThickSkin
+              tag: ThickSkin
               invert: true
             - !type:IsMob
           damage:
@@ -30,16 +28,14 @@
         - !type:ModifyBleedAmount
           conditions:
             - !type:HasTag
-              tags:
-                - ThickSkin
+              tag: ThickSkin
               invert: true
             - !type:IsMob
           amount: 5
         - !type:PopupMessage
           conditions:
             - !type:HasTag
-              tags:
-                - ThickSkin
+              tag: ThickSkin
               invert: true
             - !type:IsMob
           visualType: MediumCaution
