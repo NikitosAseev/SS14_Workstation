@@ -1,7 +1,7 @@
 ent-ClothingOuterHardsuitAtmos = скафандр атмос-техника
     .desc = Специальный костюм, защищающий от опасной среды с низким давлением. Имеет тепловую защиту.
-ent-ClothingOuterHardsuitCap = бронескафандр капитана
-    .desc = Торжественный бронескафандр, изготовленный для капитана станции.
+ent-ClothingOuterHardsuitCap = скафандр капитана
+    .desc = Торжественный скафандр, изготовленный для капитана станции.
 ent-ClothingOuterHardsuitDeathsquad = скафандр эскадрона смерти
     .desc = Продвинутый бронекостюм, применяемый спецназом в специальных операциях.
 ent-ClothingOuterHardsuitEngineering = скафандр инженера
