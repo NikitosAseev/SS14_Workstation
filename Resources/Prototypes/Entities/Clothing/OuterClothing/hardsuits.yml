@@ -176,6 +176,9 @@
   - type: Construction
     graph: HardsuitGoliath
     node: hardsuitGoliath
+  - type: Tag #RPSX edit
+    tags:
+    - HardsuitGoliath
 
 #Maxim Hardsuit
 - type: entity
