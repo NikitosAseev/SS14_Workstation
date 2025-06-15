@@ -15,8 +15,6 @@
             - material: Durathread
               amount: 5
               doAfter: 5
-            - material: FoodMeatDragon
-              amount: 1
             - material: FoodHivelordRemains
               amount: 3
               doAfter: 5
