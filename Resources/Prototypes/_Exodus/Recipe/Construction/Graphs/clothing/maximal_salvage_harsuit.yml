@@ -4,14 +4,10 @@
   graph:
     - node: start
       edges:
-        - to: ClothingOuterHardsuitGoliath
+        - to: ClothingOuterHardsuitSalvageMaximal
           steps:
-            - tag: HardsuitMining
-              name: mining hardsuit
-              icon:
-                sprite: Clothing/OuterClothing/Hardsuits/salvage.rsi
-                state: icon
-              doAfter: 5
+            - material: ClothingOuterHardsuitGoliath
+              amount: 1
             - material: Durathread
               amount: 5
               doAfter: 5
