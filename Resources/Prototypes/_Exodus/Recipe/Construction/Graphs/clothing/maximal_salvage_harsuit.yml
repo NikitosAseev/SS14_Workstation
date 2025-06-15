@@ -4,7 +4,7 @@
   graph:
     - node: start
       edges:
-        - to: ClothingOuterHardsuitSalvageMaximal
+        - to: ClothingOuterHardsuitGoliath
           steps:
             - tag: HardsuitMining
               name: mining hardsuit
@@ -15,7 +15,9 @@
             - material: Durathread
               amount: 5
               doAfter: 5
-            - material: GoliathHide
+            - material: FoodMeatDragon
+              amount: 1
+            - material: FoodHivelordRemains
               amount: 3
               doAfter: 5
     - node: ClothingOuterHardsuitSalvageMaximal
