@@ -25,7 +25,7 @@
     damageModifierSet: ManifestedSpirit
   - type: NoSlip
   - type: TTS # SS220 TTS
-    VoicePrototypeId : lich_dota_2
+    voicePrototypeId : lich_dota_2
   - type: Eye
     drawFov: false
     visMask:

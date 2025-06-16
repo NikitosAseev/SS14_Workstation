@@ -797,7 +797,7 @@
       proper: true
       gender: female
   - type: TTS # SS220 TTS
-    VoicePrototypeId: triss
+    voicePrototypeId: triss
 
 - type: entity
   name: Pun Pun

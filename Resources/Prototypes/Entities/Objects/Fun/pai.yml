@@ -72,7 +72,7 @@
   - type: TypingIndicator
     proto: robot
   - type: TTS # SS220 TTS
-    VoicePrototypeId: sentryBot
+    voicePrototypeId: sentrybot
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai

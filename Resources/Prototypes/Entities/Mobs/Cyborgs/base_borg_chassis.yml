@@ -286,7 +286,7 @@
     maxIntensity: 20
     canCreateVacuum: false # its for killing the borg not the station
   - type: TTS # SS220 TTS
-    VoicePrototypeId: turret_floor
+    voicePrototypeId: turret_floor
 
 - type: entity
   abstract: true
