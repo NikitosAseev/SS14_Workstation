@@ -71,8 +71,8 @@
     followEntity: true
   - type: TypingIndicator
     proto: robot
-  - type: TTS # Corvax-TTS
-    voice: SentryBot
+  - type: TTS # SS220 TTS
+    VoicePrototypeId: sentryBot
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai

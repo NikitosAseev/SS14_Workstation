@@ -1,4 +1,4 @@
-﻿- type: ttsVoice
+- type: ttsVoice
   name: ntts-speaker-papich
   description: ntts-speaker-papich-description
   sex: Male
@@ -90,6 +90,13 @@
   id: xrenoid
 
 - type: ttsVoice
+  name: ntts-speaker-playboyztv
+  description: ntts-speaker-playboyztv-description
+  sex: Male
+  speaker: playboyztv
+  id: playboyztv
+
+- type: ttsVoice
   name: ntts-speaker-briman
   description: ntts-speaker-briman-description
   sex: Male
@@ -97,8 +104,8 @@
   id: briman
 
 - type: ttsVoice
-  name: ntts-speaker-father-grigori
-  description: ntts-speaker-father-grigori-description
+  name: ntts-speaker-father_grigori
+  description: ntts-speaker-father_grigori-description
   sex: Male
   speaker: father_grigori
   id: father_grigori
@@ -153,15 +160,15 @@
   id: neco
 
 - type: ttsVoice
-  name: ntts-speaker-neco-arc-2
-  description: ntts-speaker-neco-arc-2-description
+  name: ntts-speaker-neco_arc_2
+  description: ntts-speaker-neco_arc_2-description
   sex: Female
   speaker: neco_arc_2
   id: neco_arc_2
 
 - type: ttsVoice
-  name: ntts-speaker-angry-neco-arc
-  description: ntts-speaker-angry-neco-arc-description
+  name: ntts-speaker-angry_neco_arc
+  description: ntts-speaker-angry_neco_arc-description
   sex: Female
   speaker: angry_neco_arc
   id: angry_neco_arc
@@ -188,15 +195,15 @@
   id: sentrybot
 
 - type: ttsVoice
-  name: ntts-speaker-moira-brown
-  description: ntts-speaker-moira-brown-description
+  name: ntts-speaker-moira_brown
+  description: ntts-speaker-moira_brown-description
   sex: Female
   speaker: moira_brown
   id: moira_brown
 
 - type: ttsVoice
-  name: ntts-speaker-robert-maccready
-  description: ntts-speaker-robert-maccready-description
+  name: ntts-speaker-robert_maccready
+  description: ntts-speaker-robert_maccready-description
   sex: Male
   speaker: robert_maccready
   id: robert_maccready
@@ -209,53 +216,67 @@
   id: threedog
 
 - type: ttsVoice
-  name: ntts-speaker-threedog-radio
-  description: ntts-speaker-threedog-radio-description
+  name: ntts-speaker-threedog_radio
+  description: ntts-speaker-threedog_radio-description
   sex: Male
   speaker: threedog_radio
   id: threedog_radio
 
 - type: ttsVoice
-  name: ntts-speaker-mister-handy-fl3
-  description: ntts-speaker-mister-handy-fl3-description
+  name: ntts-speaker-mister_handy_fl3
+  description: ntts-speaker-mister_handy_fl3-description
   sex: Male
   speaker: mister_handy_fl3
   id: mister_handy_fl3
 
 - type: ttsVoice
-  name: ntts-speaker-mister-gutsy-fl3
-  description: ntts-speaker-mister-gutsy-fl3-description
+  name: ntts-speaker-mister_gutsy_fl3
+  description: ntts-speaker-mister_gutsy_fl3-description
   sex: Male
   speaker: mister_gutsy_fl3
   id: mister_gutsy_fl3
 
 - type: ttsVoice
-  name: ntts-speaker-jericho-fl3
-  description: ntts-speaker-jericho-fl3-description
+  name: ntts-speaker-jericho_fl3
+  description: ntts-speaker-jericho_fl3-description
   sex: Male
   speaker: jericho_fl3
   id: jericho_fl3
 
 - type: ttsVoice
-  name: ntts-speaker-elder-lyons-fl3
-  description: ntts-speaker-elder-lyons-fl3-description
+  name: ntts-speaker-elder_lyons_fl3
+  description: ntts-speaker-elder_lyons_fl3-description
   sex: Male
   speaker: elder_lyons_fl3
   id: elder_lyons_fl3
 
 - type: ttsVoice
-  name: ntts-speaker-sarah-lyons-fl3
-  description: ntts-speaker-sarah-lyons-fl3-description
+  name: ntts-speaker-sarah_lyons_fl3
+  description: ntts-speaker-sarah_lyons_fl3-description
   sex: Female
   speaker: sarah_lyons_fl3
   id: sarah_lyons_fl3
 
 - type: ttsVoice
-  name: ntts-speaker-colin-moriarty-fl3
-  description: ntts-speaker-colin-moriarty-fl3-description
+  name: ntts-speaker-colin_moriarty_fl3
+  description: ntts-speaker-colin_moriarty_fl3-description
   sex: Male
   speaker: colin_moriarty_fl3
   id: colin_moriarty_fl3
+
+- type: ttsVoice
+  name: ntts-speaker-john_henry_eden_fl3
+  description: ntts-speaker-john_henry_eden_fl3-description
+  sex: Male
+  speaker: john_henry_eden_fl3
+  id: john_henry_eden_fl3
+
+- type: ttsVoice
+  name: ntts-speaker-super_mutant_fl3
+  description: ntts-speaker-super_mutant_fl3-description
+  sex: Male
+  speaker: super_mutant_fl3
+  id: super_mutant_fl3
 
 - type: ttsVoice
   name: ntts-speaker-polina
@@ -272,36 +293,36 @@
   id: romka
 
 - type: ttsVoice
-  name: ntts-speaker-boris-petrov-father-tb
-  description: ntts-speaker-boris-petrov-father-tb-description
+  name: ntts-speaker-boris_petrov_father_tb
+  description: ntts-speaker-boris_petrov_father_tb-description
   sex: Male
   speaker: boris_petrov_father_tb
   id: boris_petrov_father_tb
 
 - type: ttsVoice
-  name: ntts-speaker-karina-petrova-tb
-  description: ntts-speaker-karina-petrova-tb-description
+  name: ntts-speaker-karina_petrova_tb
+  description: ntts-speaker-karina_petrova_tb-description
   sex: Female
   speaker: karina_petrova_tb
   id: karina_petrova_tb
 
 - type: ttsVoice
-  name: ntts-speaker-kate-smirnova-tb
-  description: ntts-speaker-kate-smirnova-tb-description
+  name: ntts-speaker-kate_smirnova_tb
+  description: ntts-speaker-kate_smirnova_tb-description
   sex: Female
   speaker: kate_smirnova_tb
   id: kate_smirnova_tb
 
 - type: ttsVoice
-  name: ntts-speaker-semen-baburin-tb
-  description: ntts-speaker-semen-baburin-tb-description
+  name: ntts-speaker-semen_baburin_tb
+  description: ntts-speaker-semen_baburin_tb-description
   sex: Male
   speaker: semen_baburin_tb
   id: semen_baburin_tb
 
 - type: ttsVoice
-  name: ntts-speaker-tihonov-tb
-  description: ntts-speaker-tihonov-tb-description
+  name: ntts-speaker-tihonov_tb
+  description: ntts-speaker-tihonov_tb-description
   sex: Male
   speaker: tihonov_tb
   id: tihonov_tb
@@ -363,8 +384,8 @@
   id: hagraven
 
 - type: ttsVoice
-  name: ntts-speaker-hermaeus-mora
-  description: ntts-speaker-hermaeus-mora-description
+  name: ntts-speaker-hermaeus_mora
+  description: ntts-speaker-hermaeus_mora-description
   sex: Male
   speaker: hermaeus_mora
   id: hermaeus_mora
@@ -405,6 +426,27 @@
   id: nazir
 
 - type: ttsVoice
+  name: ntts-speaker-female_commander
+  description: ntts-speaker-female_commander-description
+  sex: Female
+  speaker: female_commander
+  id: female_commander
+
+- type: ttsVoice
+  name: ntts-speaker-lord_harkon
+  description: ntts-speaker-lord_harkon-description
+  sex: Male
+  speaker: lord_harkon
+  id: lord_harkon
+
+- type: ttsVoice
+  name: ntts-speaker-serana
+  description: ntts-speaker-serana-description
+  sex: Female
+  speaker: serana
+  id: serana
+
+- type: ttsVoice
   name: ntts-speaker-glados
   description: ntts-speaker-glados-description
   sex: Female
@@ -412,29 +454,29 @@
   id: glados
 
 - type: ttsVoice
-  name: ntts-speaker-adventure-core
-  description: ntts-speaker-adventure-core-description
+  name: ntts-speaker-adventure_core
+  description: ntts-speaker-adventure_core-description
   sex: Male
   speaker: adventure_core
   id: adventure_core
 
 - type: ttsVoice
-  name: ntts-speaker-fact-core
-  description: ntts-speaker-fact-core-description
+  name: ntts-speaker-fact_core
+  description: ntts-speaker-fact_core-description
   sex: Male
   speaker: fact_core
   id: fact_core
 
 - type: ttsVoice
-  name: ntts-speaker-space-core
-  description: ntts-speaker-space-core-description
+  name: ntts-speaker-space_core
+  description: ntts-speaker-space_core-description
   sex: Male
   speaker: space_core
   id: space_core
 
 - type: ttsVoice
-  name: ntts-speaker-turret-floor
-  description: ntts-speaker-turret-floor-description
+  name: ntts-speaker-turret_floor
+  description: ntts-speaker-turret_floor-description
   sex: Female
   speaker: turret_floor
   id: turret_floor
@@ -473,6 +515,62 @@
   sex: Female
   speaker: triss
   id: triss
+
+- type: ttsVoice
+  name: ntts-speaker-kovir_nobleman
+  description: ntts-speaker-kovir_nobleman-description
+  sex: Male
+  speaker: kovir_nobleman
+  id: kovir_nobleman
+
+- type: ttsVoice
+  name: ntts-speaker-zoltan_chivay
+  description: ntts-speaker-zoltan_chivay-description
+  sex: Male
+  speaker: zoltan_chivay
+  id: zoltan_chivay
+
+- type: ttsVoice
+  name: ntts-speaker-vesemir
+  description: ntts-speaker-vesemir-description
+  sex: Male
+  speaker: vesemir
+  id: vesemir
+
+- type: ttsVoice
+  name: ntts-speaker-guillaume_de_launfal
+  description: ntts-speaker-guillaume_de_launfal-description
+  sex: Male
+  speaker: guillaume_de_launfal
+  id: guillaume_de_launfal
+
+- type: ttsVoice
+  name: ntts-speaker-philippa_eilhart
+  description: ntts-speaker-philippa_eilhart-description
+  sex: Female
+  speaker: philippa_eilhart
+  id: philippa_eilhart
+
+- type: ttsVoice
+  name: ntts-speaker-ewald_borsodi
+  description: ntts-speaker-ewald_borsodi-description
+  sex: Male
+  speaker: ewald_borsodi
+  id: ewald_borsodi
+
+- type: ttsVoice
+  name: ntts-speaker-dandelion
+  description: ntts-speaker-dandelion-description
+  sex: Male
+  speaker: dandelion
+  id: dandelion
+
+- type: ttsVoice
+  name: ntts-speaker-shani
+  description: ntts-speaker-shani-description
+  sex: Female
+  speaker: shani
+  id: shani
 
 - type: ttsVoice
   name: ntts-speaker-azir
@@ -643,8 +741,8 @@
   id: panam
 
 - type: ttsVoice
-  name: ntts-speaker-v-female
-  description: ntts-speaker-v-female-description
+  name: ntts-speaker-v_female
+  description: ntts-speaker-v_female-description
   sex: Female
   speaker: v_female
   id: v_female
@@ -678,6 +776,41 @@
   id: jackie
 
 - type: ttsVoice
+  name: ntts-speaker-maiko
+  description: ntts-speaker-maiko-description
+  sex: Female
+  speaker: maiko
+  id: maiko
+
+- type: ttsVoice
+  name: ntts-speaker-brendan
+  description: ntts-speaker-brendan-description
+  sex: Male
+  speaker: brendan
+  id: brendan
+
+- type: ttsVoice
+  name: ntts-speaker-nancy_hartley
+  description: ntts-speaker-nancy_hartley-description
+  sex: Female
+  speaker: nancy_hartley
+  id: nancy_hartley
+
+- type: ttsVoice
+  name: ntts-speaker-oswald_forrest
+  description: ntts-speaker-oswald_forrest-description
+  sex: Male
+  speaker: oswald_forrest
+  id: oswald_forrest
+
+- type: ttsVoice
+  name: ntts-speaker-steve
+  description: ntts-speaker-steve-description
+  sex: Male
+  speaker: steve
+  id: steve
+
+- type: ttsVoice
   name: ntts-speaker-dornan
   description: ntts-speaker-dornan-description
   sex: Male
@@ -685,8 +818,8 @@
   id: dornan
 
 - type: ttsVoice
-  name: ntts-speaker-officer-enclave
-  description: ntts-speaker-officer-enclave-description
+  name: ntts-speaker-officer_enclave
+  description: ntts-speaker-officer_enclave-description
   sex: Male
   speaker: officer_enclave
   id: officer_enclave
@@ -727,22 +860,22 @@
   id: myron
 
 - type: ttsVoice
-  name: ntts-speaker-good-thalya
-  description: ntts-speaker-good-thalya-description
+  name: ntts-speaker-good_thalya
+  description: ntts-speaker-good_thalya-description
   sex: Female
   speaker: good_thalya
   id: good_thalya
 
 - type: ttsVoice
-  name: ntts-speaker-evil-thalya
-  description: ntts-speaker-evil-thalya-description
+  name: ntts-speaker-evil_thalya
+  description: ntts-speaker-evil_thalya-description
   sex: Female
   speaker: evil_thalya
   id: evil_thalya
 
 - type: ttsVoice
-  name: ntts-speaker-narrator-d3
-  description: ntts-speaker-narrator-d3-description
+  name: ntts-speaker-narrator_d3
+  description: ntts-speaker-narrator_d3-description
   sex: Male
   speaker: narrator_d3
   id: narrator_d3
@@ -783,8 +916,8 @@
   id: jaina
 
 - type: ttsVoice
-  name: ntts-speaker-uther-hs
-  description: ntts-speaker-uther-hs-description
+  name: ntts-speaker-uther_hs
+  description: ntts-speaker-uther_hs-description
   sex: Male
   speaker: uther_hs
   id: uther_hs
@@ -930,260 +1063,596 @@
   id: poppysweeting
 
 - type: ttsVoice
-  name: ntts-speaker-generic-goblin-c
-  description: ntts-speaker-generic-goblin-c-description
+  name: ntts-speaker-generic_goblin_c
+  description: ntts-speaker-generic_goblin_c-description
   sex: Male
   speaker: generic_goblin_c
   id: generic_goblin_c
 
 - type: ttsVoice
-  name: ntts-speaker-dinah-hecat
-  description: ntts-speaker-dinah-hecat-description
+  name: ntts-speaker-dinah_hecat
+  description: ntts-speaker-dinah_hecat-description
   sex: Female
   speaker: dinah_hecat
   id: dinah_hecat
 
 - type: ttsVoice
-  name: ntts-speaker-aesop-sharp
-  description: ntts-speaker-aesop-sharp-description
+  name: ntts-speaker-aesop_sharp
+  description: ntts-speaker-aesop_sharp-description
   sex: Male
   speaker: aesop_sharp
   id: aesop_sharp
 
 - type: ttsVoice
-  name: ntts-speaker-abraham-ronen
-  description: ntts-speaker-abraham-ronen-description
+  name: ntts-speaker-abraham_ronen
+  description: ntts-speaker-abraham_ronen-description
   sex: Male
   speaker: abraham_ronen
   id: abraham_ronen
 
 - type: ttsVoice
-  name: ntts-speaker-samantha-dale
-  description: ntts-speaker-samantha-dale-description
+  name: ntts-speaker-samantha_dale
+  description: ntts-speaker-samantha_dale-description
   sex: Female
   speaker: samantha_dale
   id: samantha_dale
 
 - type: ttsVoice
-  name: ntts-speaker-sirona-ryan
-  description: ntts-speaker-sirona-ryan-description
+  name: ntts-speaker-sirona_ryan
+  description: ntts-speaker-sirona_ryan-description
   sex: Female
   speaker: sirona_ryan
   id: sirona_ryan
 
 - type: ttsVoice
-  name: ntts-speaker-sophronia-franklin
-  description: ntts-speaker-sophronia-franklin-description
+  name: ntts-speaker-sophronia_franklin
+  description: ntts-speaker-sophronia_franklin-description
   sex: Female
   speaker: sophronia_franklin
   id: sophronia_franklin
 
 - type: ttsVoice
-  name: ntts-speaker-abaddon-dota-2
-  description: ntts-speaker-abaddon-dota-2-description
+  name: ntts-speaker-everett_clopton
+  description: ntts-speaker-everett_clopton-description
+  sex: Male
+  speaker: everett_clopton
+  id: everett_clopton
+
+- type: ttsVoice
+  name: ntts-speaker-generic_goblin_b
+  description: ntts-speaker-generic_goblin_b-description
+  sex: Male
+  speaker: generic_goblin_b
+  id: generic_goblin_b
+
+- type: ttsVoice
+  name: ntts-speaker-sanctuary_house_elf
+  description: ntts-speaker-sanctuary_house_elf-description
+  sex: Male
+  speaker: sanctuary_house_elf
+  id: sanctuary_house_elf
+
+- type: ttsVoice
+  name: ntts-speaker-abaddon_dota_2
+  description: ntts-speaker-abaddon_dota_2-description
   sex: Male
   speaker: abaddon_dota_2
   id: abaddon_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-alchemist-dota-2
-  description: ntts-speaker-alchemist-dota-2-description
+  name: ntts-speaker-alchemist_dota_2
+  description: ntts-speaker-alchemist_dota_2-description
   sex: Male
   speaker: alchemist_dota_2
   id: alchemist_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-anti-mage-dota-2
-  description: ntts-speaker-anti-mage-dota-2-description
+  name: ntts-speaker-anti-mage_dota_2
+  description: ntts-speaker-anti-mage_dota_2-description
   sex: Male
   speaker: anti-mage_dota_2
   id: anti-mage_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-arc-warden-dota-2
-  description: ntts-speaker-arc-warden-dota-2-description
+  name: ntts-speaker-arc_warden_dota_2
+  description: ntts-speaker-arc_warden_dota_2-description
   sex: Male
   speaker: arc_warden_dota_2
   id: arc_warden_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-batrider-dota-2
-  description: ntts-speaker-batrider-dota-2-description
+  name: ntts-speaker-batrider_dota_2
+  description: ntts-speaker-batrider_dota_2-description
   sex: Male
   speaker: batrider_dota_2
   id: batrider_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-bloodseeker-dota-2
-  description: ntts-speaker-bloodseeker-dota-2-description
+  name: ntts-speaker-bloodseeker_dota_2
+  description: ntts-speaker-bloodseeker_dota_2-description
   sex: Male
   speaker: bloodseeker_dota_2
   id: bloodseeker_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-bounty-hunter-dota-2
-  description: ntts-speaker-bounty-hunter-dota-2-description
+  name: ntts-speaker-bounty_hunter_dota_2
+  description: ntts-speaker-bounty_hunter_dota_2-description
   sex: Male
   speaker: bounty_hunter_dota_2
   id: bounty_hunter_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-bristleback-dota-2
-  description: ntts-speaker-bristleback-dota-2-description
+  name: ntts-speaker-bristleback_dota_2
+  description: ntts-speaker-bristleback_dota_2-description
   sex: Male
   speaker: bristleback_dota_2
   id: bristleback_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-broodmother-dota-2
-  description: ntts-speaker-broodmother-dota-2-description
+  name: ntts-speaker-broodmother_dota_2
+  description: ntts-speaker-broodmother_dota_2-description
   sex: Female
   speaker: broodmother_dota_2
   id: broodmother_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-centaur-warrunner-dota-2
-  description: ntts-speaker-centaur-warrunner-dota-2-description
+  name: ntts-speaker-centaur_warrunner_dota_2
+  description: ntts-speaker-centaur_warrunner_dota_2-description
   sex: Male
   speaker: centaur_warrunner_dota_2
   id: centaur_warrunner_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-clinkz-dota-2
-  description: ntts-speaker-clinkz-dota-2-description
+  name: ntts-speaker-clinkz_dota_2
+  description: ntts-speaker-clinkz_dota_2-description
   sex: Male
   speaker: clinkz_dota_2
   id: clinkz_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-clockwerk-dota-2
-  description: ntts-speaker-clockwerk-dota-2-description
+  name: ntts-speaker-clockwerk_dota_2
+  description: ntts-speaker-clockwerk_dota_2-description
   sex: Male
   speaker: clockwerk_dota_2
   id: clockwerk_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-crystal-maiden-dota-2
-  description: ntts-speaker-crystal-maiden-dota-2-description
+  name: ntts-speaker-crystal_maiden_dota_2
+  description: ntts-speaker-crystal_maiden_dota_2-description
   sex: Female
   speaker: crystal_maiden_dota_2
   id: crystal_maiden_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-dazzle-dota-2
-  description: ntts-speaker-dazzle-dota-2-description
+  name: ntts-speaker-dazzle_dota_2
+  description: ntts-speaker-dazzle_dota_2-description
   sex: Male
   speaker: dazzle_dota_2
   id: dazzle_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-disruptor-dota-2
-  description: ntts-speaker-disruptor-dota-2-description
+  name: ntts-speaker-disruptor_dota_2
+  description: ntts-speaker-disruptor_dota_2-description
   sex: Male
   speaker: disruptor_dota_2
   id: disruptor_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-doom-dota-2
-  description: ntts-speaker-doom-dota-2-description
+  name: ntts-speaker-doom_dota_2
+  description: ntts-speaker-doom_dota_2-description
   sex: Male
   speaker: doom_dota_2
   id: doom_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-dragon-knight-dota-2
-  description: ntts-speaker-dragon-knight-dota-2-description
+  name: ntts-speaker-dragon_knight_dota_2
+  description: ntts-speaker-dragon_knight_dota_2-description
   sex: Male
   speaker: dragon_knight_dota_2
   id: dragon_knight_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-dragon-knight-dragon-dota-2
-  description: ntts-speaker-dragon-knight-dragon-dota-2-description
+  name: ntts-speaker-dragon_knight_dragon_dota_2
+  description: ntts-speaker-dragon_knight_dragon_dota_2-description
   sex: Male
   speaker: dragon_knight_dragon_dota_2
   id: dragon_knight_dragon_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-drow-ranger-dota-2
-  description: ntts-speaker-drow-ranger-dota-2-description
+  name: ntts-speaker-drow_ranger_dota_2
+  description: ntts-speaker-drow_ranger_dota_2-description
   sex: Female
   speaker: drow_ranger_dota_2
   id: drow_ranger_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-earthshaker-dota-2
-  description: ntts-speaker-earthshaker-dota-2-description
+  name: ntts-speaker-earthshaker_dota_2
+  description: ntts-speaker-earthshaker_dota_2-description
   sex: Male
   speaker: earthshaker_dota_2
   id: earthshaker_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-ember-spirit-dota-2
-  description: ntts-speaker-ember-spirit-dota-2-description
+  name: ntts-speaker-ember_spirit_dota_2
+  description: ntts-speaker-ember_spirit_dota_2-description
   sex: Male
   speaker: ember_spirit_dota_2
   id: ember_spirit_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-enigma-dota-2
-  description: ntts-speaker-enigma-dota-2-description
+  name: ntts-speaker-enigma_dota_2
+  description: ntts-speaker-enigma_dota_2-description
   sex: Male
   speaker: enigma_dota_2
   id: enigma_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-gyrocopter-dota-2
-  description: ntts-speaker-gyrocopter-dota-2-description
+  name: ntts-speaker-gyrocopter_dota_2
+  description: ntts-speaker-gyrocopter_dota_2-description
   sex: Male
   speaker: gyrocopter_dota_2
   id: gyrocopter_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-huskar-dota-2
-  description: ntts-speaker-huskar-dota-2-description
+  name: ntts-speaker-huskar_dota_2
+  description: ntts-speaker-huskar_dota_2-description
   sex: Male
   speaker: huskar_dota_2
   id: huskar_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-invoker-dota-2
-  description: ntts-speaker-invoker-dota-2-description
+  name: ntts-speaker-invoker_dota_2
+  description: ntts-speaker-invoker_dota_2-description
   sex: Male
   speaker: invoker_dota_2
   id: invoker_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-juggernaut-dota-2
-  description: ntts-speaker-juggernaut-dota-2-description
+  name: ntts-speaker-juggernaut_dota_2
+  description: ntts-speaker-juggernaut_dota_2-description
   sex: Male
   speaker: juggernaut_dota_2
   id: juggernaut_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-keeper-of-the-light-dota-2
-  description: ntts-speaker-keeper-of-the-light-dota-2-description
+  name: ntts-speaker-keeper_of_the_light_dota_2
+  description: ntts-speaker-keeper_of_the_light_dota_2-description
   sex: Male
   speaker: keeper_of_the_light_dota_2
   id: keeper_of_the_light_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-kunkka-dota-2
-  description: ntts-speaker-kunkka-dota-2-description
+  name: ntts-speaker-kunkka_dota_2
+  description: ntts-speaker-kunkka_dota_2-description
   sex: Male
   speaker: kunkka_dota_2
   id: kunkka_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-legion-commander-demon-dota-2
-  description: ntts-speaker-legion-commander-demon-dota-2-description
+  name: ntts-speaker-legion_commander_demon_dota_2
+  description: ntts-speaker-legion_commander_demon_dota_2-description
   sex: Female
   speaker: legion_commander_demon_dota_2
   id: legion_commander_demon_dota_2
 
 - type: ttsVoice
-  name: ntts-speaker-legion-commander-dota-2
-  description: ntts-speaker-legion-commander-dota-2-description
+  name: ntts-speaker-legion_commander_dota_2
+  description: ntts-speaker-legion_commander_dota_2-description
   sex: Female
   speaker: legion_commander_dota_2
   id: legion_commander_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-lich_dota_2
+  description: ntts-speaker-lich_dota_2-description
+  sex: Male
+  speaker: lich_dota_2
+  id: lich_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-lina_dota_2
+  description: ntts-speaker-lina_dota_2-description
+  sex: Female
+  speaker: lina_dota_2
+  id: lina_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-luna_dota_2
+  description: ntts-speaker-luna_dota_2-description
+  sex: Female
+  speaker: luna_dota_2
+  id: luna_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-lycan_dota_2
+  description: ntts-speaker-lycan_dota_2-description
+  sex: Male
+  speaker: lycan_dota_2
+  id: lycan_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-lycan_wolf_dota_2
+  description: ntts-speaker-lycan_wolf_dota_2-description
+  sex: Male
+  speaker: lycan_wolf_dota_2
+  id: lycan_wolf_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-meepo_dota_2
+  description: ntts-speaker-meepo_dota_2-description
+  sex: Male
+  speaker: meepo_dota_2
+  id: meepo_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-mirana_dota_2
+  description: ntts-speaker-mirana_dota_2-description
+  sex: Female
+  speaker: mirana_dota_2
+  id: mirana_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-monkey_king_crown_dota_2
+  description: ntts-speaker-monkey_king_crown_dota_2-description
+  sex: Male
+  speaker: monkey_king_crown_dota_2
+  id: monkey_king_crown_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-monkey_king_dota_2
+  description: ntts-speaker-monkey_king_dota_2-description
+  sex: Male
+  speaker: monkey_king_dota_2
+  id: monkey_king_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-necrophos_dota_2
+  description: ntts-speaker-necrophos_dota_2-description
+  sex: Male
+  speaker: necrophos_dota_2
+  id: necrophos_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-nyx_assassin_dota_2
+  description: ntts-speaker-nyx_assassin_dota_2-description
+  sex: Male
+  speaker: nyx_assassin_dota_2
+  id: nyx_assassin_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-omniknight_dota_2
+  description: ntts-speaker-omniknight_dota_2-description
+  sex: Male
+  speaker: omniknight_dota_2
+  id: omniknight_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-outworld_destroyer_dota_2
+  description: ntts-speaker-outworld_destroyer_dota_2-description
+  sex: Male
+  speaker: outworld_destroyer_dota_2
+  id: outworld_destroyer_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-phantom_assassin_arcana_dota_2
+  description: ntts-speaker-phantom_assassin_arcana_dota_2-description
+  sex: Female
+  speaker: phantom_assassin_arcana_dota_2
+  id: phantom_assassin_arcana_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-phantom_assassin_dota_2
+  description: ntts-speaker-phantom_assassin_dota_2-description
+  sex: Female
+  speaker: phantom_assassin_dota_2
+  id: phantom_assassin_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-phantom_lancer_dota_2
+  description: ntts-speaker-phantom_lancer_dota_2-description
+  sex: Male
+  speaker: phantom_lancer_dota_2
+  id: phantom_lancer_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-pudge_dota_2
+  description: ntts-speaker-pudge_dota_2-description
+  sex: Male
+  speaker: pudge_dota_2
+  id: pudge_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-queen_of_pain_dota_2
+  description: ntts-speaker-queen_of_pain_dota_2-description
+  sex: Female
+  speaker: queen_of_pain_dota_2
+  id: queen_of_pain_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-razor_dota_2
+  description: ntts-speaker-razor_dota_2-description
+  sex: Male
+  speaker: razor_dota_2
+  id: razor_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-riki_dota_2
+  description: ntts-speaker-riki_dota_2-description
+  sex: Male
+  speaker: riki_dota_2
+  id: riki_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-rubick_dota_2
+  description: ntts-speaker-rubick_dota_2-description
+  sex: Male
+  speaker: rubick_dota_2
+  id: rubick_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-sand_king_dota_2
+  description: ntts-speaker-sand_king_dota_2-description
+  sex: Male
+  speaker: sand_king_dota_2
+  id: sand_king_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-shadow_fiend_dota_2
+  description: ntts-speaker-shadow_fiend_dota_2-description
+  sex: Male
+  speaker: shadow_fiend_dota_2
+  id: shadow_fiend_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-shadow_shaman_dota_2
+  description: ntts-speaker-shadow_shaman_dota_2-description
+  sex: Male
+  speaker: shadow_shaman_dota_2
+  id: shadow_shaman_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-skywrath_mage_dota_2
+  description: ntts-speaker-skywrath_mage_dota_2-description
+  sex: Male
+  speaker: skywrath_mage_dota_2
+  id: skywrath_mage_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-slardar_dota_2
+  description: ntts-speaker-slardar_dota_2-description
+  sex: Male
+  speaker: slardar_dota_2
+  id: slardar_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-slark_dota_2
+  description: ntts-speaker-slark_dota_2-description
+  sex: Male
+  speaker: slark_dota_2
+  id: slark_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-spirit_breaker_dota_2
+  description: ntts-speaker-spirit_breaker_dota_2-description
+  sex: Male
+  speaker: spirit_breaker_dota_2
+  id: spirit_breaker_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-storm_spirit_dota_2
+  description: ntts-speaker-storm_spirit_dota_2-description
+  sex: Male
+  speaker: storm_spirit_dota_2
+  id: storm_spirit_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-sven_dota_2
+  description: ntts-speaker-sven_dota_2-description
+  sex: Male
+  speaker: sven_dota_2
+  id: sven_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-templar_assassin_dota_2
+  description: ntts-speaker-templar_assassin_dota_2-description
+  sex: Female
+  speaker: templar_assassin_dota_2
+  id: templar_assassin_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-tidehunter_dota_2
+  description: ntts-speaker-tidehunter_dota_2-description
+  sex: Male
+  speaker: tidehunter_dota_2
+  id: tidehunter_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-treant_protector_dota_2
+  description: ntts-speaker-treant_protector_dota_2-description
+  sex: Male
+  speaker: treant_protector_dota_2
+  id: treant_protector_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-underlord_dota_2
+  description: ntts-speaker-underlord_dota_2-description
+  sex: Male
+  speaker: underlord_dota_2
+  id: underlord_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-ursa_dota_2
+  description: ntts-speaker-ursa_dota_2-description
+  sex: Male
+  speaker: ursa_dota_2
+  id: ursa_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-windranger_dota_2
+  description: ntts-speaker-windranger_dota_2-description
+  sex: Female
+  speaker: windranger_dota_2
+  id: windranger_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-winter_wyvern_dota_2
+  description: ntts-speaker-winter_wyvern_dota_2-description
+  sex: Female
+  speaker: winter_wyvern_dota_2
+  id: winter_wyvern_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-witch_doctor_dota_2
+  description: ntts-speaker-witch_doctor_dota_2-description
+  sex: Male
+  speaker: witch_doctor_dota_2
+  id: witch_doctor_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-wraith_king_dota_2
+  description: ntts-speaker-wraith_king_dota_2-description
+  sex: Male
+  speaker: wraith_king_dota_2
+  id: wraith_king_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-zeus_dota_2
+  description: ntts-speaker-zeus_dota_2-description
+  sex: Male
+  speaker: zeus_dota_2
+  id: zeus_dota_2
+
+- type: ttsVoice
+  name: ntts-speaker-mita
+  description: ntts-speaker-mita-description
+  sex: Female
+  speaker: mita
+  id: mita
+
+- type: ttsVoice
+  name: ntts-speaker-mitadream
+  description: ntts-speaker-mitadream-description
+  sex: Female
+  speaker: mitadream
+  id: mitadream
+
+- type: ttsVoice
+  name: ntts-speaker-mitaghost
+  description: ntts-speaker-mitaghost-description
+  sex: Female
+  speaker: mitaghost
+  id: mitaghost
+
+- type: ttsVoice
+  name: ntts-speaker-mitakind
+  description: ntts-speaker-mitakind-description
+  sex: Female
+  speaker: mitakind
+  id: mitakind
+
+- type: ttsVoice
+  name: ntts-speaker-mitashorthairs
+  description: ntts-speaker-mitashorthairs-description
+  sex: Female
+  speaker: mitashorthairs
+  id: mitashorthairs
