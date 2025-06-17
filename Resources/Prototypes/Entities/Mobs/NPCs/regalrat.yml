@@ -133,8 +133,8 @@
     deactivateSound: null
   - type: Insulated # RPSX EDIT
     coefficient: 0.5
-  - type: TTS # Corvax-TTS
-    voice: Rat
+  - type: TTS # SS220 TTS
+    voicePrototypeId: riki_dota_2
 
 - type: entity
   id: MobRatKingBuff

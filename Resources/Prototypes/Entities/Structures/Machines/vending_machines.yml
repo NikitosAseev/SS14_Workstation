@@ -70,8 +70,8 @@
   - type: Anchorable
   - type: TypingIndicator
     proto: robot
-  - type: TTS # Corvax-TTS
-    voice: SentryBot
+  - type: TTS # SS220 TTS
+    voicePrototypeId: sentrybot
   - type: Speech
     speechVerb: Robotic
     speechSounds: Vending
