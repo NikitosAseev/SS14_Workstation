@@ -1,16 +1,13 @@
 ﻿
 - type: entity
   id: MedicalPrinterCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: MedicalTechFabCircuitboard
   name: Medical Printer Circuitboard
   components:
     - type: Sprite
       state: medical
     - type: MachineBoard
       prototype: MedicalPrinter
-      stackRequirements:
-        MatterBin: 2
-        Manipulator: 2
       tagRequirements:
         GlassBeaker:
           amount: 2

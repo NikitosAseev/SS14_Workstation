@@ -19,7 +19,7 @@
 ## Dynamic
 
 - type: latheRecipePack
-  id: AdvensedPrinterLathePack
+  id: AdvencedPrinterLathePack
   recipes:
   - LeftDrillArmHand
   - RightDrillArmHand
