@@ -136,9 +136,6 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("CentralCommandFaxPrototype"); //RPSX
             _prototypeManager.RegisterIgnore("ERTGroup"); //RPSX
             _prototypeManager.RegisterIgnore("salaries"); //RPSX
-            _prototypeManager.RegisterIgnore("narsiAbilityPrototype"); //RPSX
-            _prototypeManager.RegisterIgnore("narsiRitualCategory"); //RPSX
-            _prototypeManager.RegisterIgnore("narsiRitual"); //RPSX
 
             _componentFactory.GenerateNetIds();
             _adminManager.Initialize();
