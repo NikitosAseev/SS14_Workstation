@@ -32,7 +32,6 @@
   components:
   - type: Pda
     id: SurgeryMedicalIDCard
-    state: pda-medical
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#447987"

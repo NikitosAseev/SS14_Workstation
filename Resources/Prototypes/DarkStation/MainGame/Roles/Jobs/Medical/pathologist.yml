@@ -36,7 +36,6 @@
   components:
   - type: Pda
     id: PathologistMedicalIDCard
-    state: pda-pathologist
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#70534b"
