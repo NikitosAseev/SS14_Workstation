@@ -9,7 +9,7 @@
     itemIconStyle: NoItem
     useDelay: 300
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: allteleport
   - type: InstantAction
     event: !type:NarsiCultistLeaderEvent
@@ -31,7 +31,7 @@
     itemIconStyle: NoItem
     useDelay: 120
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: emp
   - type: InstantAction
     event: !type:NarsiCultistEmpEvent
@@ -52,7 +52,7 @@
     itemIconStyle: NoItem
     useDelay: 90
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: fire
   - type: InstantAction
     event: !type:NarsiCultistFireArmsEvent
@@ -73,7 +73,7 @@
     itemIconStyle: NoItem
     useDelay: 120
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: stealth 
   - type: InstantAction
     event: !type:NarsiCultistInvisibilityEvent
@@ -94,7 +94,7 @@
     itemIconStyle: NoItem
     useDelay: 60
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: shadow
   - type: InstantAction
     event: !type:NarsiCultistShadowEvent
@@ -115,7 +115,7 @@
     itemIconStyle: NoItem
     useDelay: 120
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: teleport
   - type: InstantAction
     event: !type:NarsiCultistTeleportEvent
@@ -136,7 +136,7 @@
     itemIconStyle: NoItem
     useDelay: 90
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: ghostaxe
   - type: InstantAction
     event: !type:NarsiCultistGhostWeaponEvent
@@ -156,7 +156,7 @@
   - type: Action
     itemIconStyle: NoItem
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: ghostaxe
   - type: InstantAction
     event: !type:NarsiCultistGhostWeaponRevertEvent
@@ -179,7 +179,7 @@
     useDelay: 60
     checkCanInteract: true
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: silence
   - type: TargetAction
     range: 6
@@ -208,7 +208,7 @@
     useDelay: 60
     checkCanInteract: true
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: blindness
   - type: TargetAction
     range: 6
@@ -237,7 +237,7 @@
     useDelay: 60
     checkCanInteract: true
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: stun
   - type: TargetAction
     range: 6
@@ -266,7 +266,7 @@
     useDelay: 60
     checkCanInteract: true
     icon:
-      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi/
+      sprite: DarkStation/MainGame/DarkForces/Cult/Interface/actions.rsi
       state: cuff
   - type: TargetAction
     range: 6
