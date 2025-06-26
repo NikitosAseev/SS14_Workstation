@@ -2,7 +2,7 @@
 # TODO BODY: Part damage
 - type: entity
   id: PartReptilian
-  parent: BaseItem
+  parent: [ BaseItem, BasePart ]
   name: "reptilian body part"
   abstract: true
   components:
@@ -23,7 +23,7 @@
 - type: entity
   id: TorsoReptilian
   name: "reptilian torso"
-  parent: PartReptilian
+  parent: [ PartReptilian, BaseTorso ]
   components:
   - type: Sprite
     netsync: true
@@ -43,7 +43,7 @@
 - type: entity
   id: HeadReptilian
   name: "reptilian head"
-  parent: PartReptilian
+  parent: [ PartReptilian, BaseHead ]
   components:
   - type: Sprite
     netsync: true
