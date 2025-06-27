@@ -122,7 +122,7 @@ food-sequence-burger-content-world-pea = миро
 
 # TACO
 
-food-sequence-cotton-burger-gen = { $content }бургер
+food-sequence-cotton-burger-gen = { $content } бургер
 food-sequence-cotton-burger-content-cotton-bol = хлопко
 food-sequence-cotton-burger-content-pyrotton-bol = пиро
 food-sequence-cotton-burger-content-plushie-throngler = нагибатор
