@@ -399,7 +399,7 @@
     - TowelColorMime
 
   # Cane
-  - type: loadout
+- type: loadout
   id: Cane
   storage:
     back:
