@@ -438,3 +438,10 @@
     back:
     - TowelColorMime
   groupBy: "towels"
+
+# RPSX Cane
+- type: loadout
+  id: Cane
+  storage:
+    back:
+    - Cane
