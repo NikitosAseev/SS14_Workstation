@@ -398,7 +398,7 @@
     back:
     - TowelColorMime
 
-  # Cane
+  # RPSX Cane
 - type: loadout
   id: Cane
   storage:
