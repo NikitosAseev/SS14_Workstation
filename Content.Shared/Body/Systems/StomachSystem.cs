@@ -7,7 +7,6 @@ using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
 using Robust.Shared.Containers;
 using Robust.Shared.Timing;
-using Content.Server.Body.Events;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Body.Systems

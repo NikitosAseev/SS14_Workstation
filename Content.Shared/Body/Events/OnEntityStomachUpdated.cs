@@ -1,6 +1,6 @@
 using Content.Shared.Chemistry.Reagent;
 
-namespace Content.Server.Body.Events;
+namespace Content.Shared.Body.Events;
 
 [ByRefEvent]
 public record struct OnEntityStomachUpdated(ReagentQuantity Quantity);
