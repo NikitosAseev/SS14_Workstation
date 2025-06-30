@@ -1,3 +1,3 @@
-construction-recipe-crate-freezer = crate freezer
-construction-recipe-big-box = large cardboard box
-construction-recipe-box-cardboard = small cardboard box
+construction-recipe-crate-freezer = Ящик-морозильник
+construction-recipe-big-box = Большая картонная коробка
+construction-recipe-box-cardboard = Маленькая картонная коробка

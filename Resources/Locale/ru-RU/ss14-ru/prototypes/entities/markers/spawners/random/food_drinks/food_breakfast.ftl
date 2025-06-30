@@ -1,3 +1,3 @@
-ent-RandomFoodBreakfast = random food spawner
-    .suffix = Meal
+ent-RandomFoodBreakfast = Генератор случайной еды
+    .suffix = Завтрак
     .desc = { ent-MarkerBase.desc }
