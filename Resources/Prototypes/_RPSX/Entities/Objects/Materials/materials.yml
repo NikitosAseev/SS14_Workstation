@@ -1,7 +1,6 @@
-
 - type: entity
   parent: MaterialBase
-  id: MaterialSyntheticCloth
+  id: SyntheticCloth
   name: synthetic cloth
   suffix: Full
   components:
@@ -27,9 +26,9 @@
     stackType: Cloth
     baseLayer: base
     layerStates:
-    - cloth
-    - cloth_2
-    - cloth_3
+      - cloth
+      - cloth_2
+      - cloth_3
   - type: Material
   - type: PhysicalComposition
     materialComposition:
@@ -37,9 +36,10 @@
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: Fiber
-        Quantity: 3
+        - ReagentId: Fiber
+          Quantity: 3
   - type: Sprite
+    sprite: /Textures/_RPSX/Objects/Materials/materials.rsi
     state: cloth_3
     layers:
     - state: cloth_3
@@ -49,39 +49,42 @@
     requiresSpecialDigestion: true
   - type: FlavorProfile
     flavors:
-    - fiber
+      - fiber
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 5
         reagents:
-        - ReagentId: Fiber
-          Quantity: 5
+          - ReagentId: Fiber
+            Quantity: 5
   - type: Tag
     tags:
-      - ClothMade
+      - SyntheticClothMade
       - Gauze
       - RawMaterial
+  - type: Construction
+    graph: WebObjects
+    node: cloth
   - type: Item
     heldPrefix: cloth
-
+    size: Normal
 
 - type: entity
-  parent: MaterialSyntheticCloth
-  id: MaterialSyntheticCloth10
+  parent: SyntheticCloth
+  id: SyntheticCloth10
   suffix: 10
   components:
   - type: Sprite
-    state: cloth
+    state: cloth_2
   - type: Stack
     count: 10
 
 - type: entity
-  parent: MaterialSyntheticCloth
-  id: MaterialSyntheticCloth1
+  parent: SyntheticCloth
+  id: SyntheticCloth1
   suffix: Single
   components:
   - type: Sprite
-    state: cloth
+    state: cloth_1
   - type: Stack
     count: 1

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by ledniky DS+GS",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+
+    {
+      "name": "cloth"
+    },
+    {
+      "name": "cloth-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "cloth-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "cloth_2"
+    },
+    {
+      "name": "cloth_3"
+    }
+  ]
+}

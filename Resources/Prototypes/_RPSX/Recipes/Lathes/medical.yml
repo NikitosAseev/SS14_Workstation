@@ -17,7 +17,7 @@
   materials:
     Steel: 200
     Plastic: 200
-    Cloth: 200
+    SyntheticCloth: 200
 
 - type: latheRecipe
   abstract: true
@@ -27,7 +27,7 @@
   materials:
     Steel: 200
     Plastic: 100
-    Cloth: 100
+    SyntheticCloth: 100
     Plasteel: 500
 
 - type: latheRecipe
@@ -37,7 +37,7 @@
   materials:
     Steel: 10
     Plastic: 500
-    Cloth: 500
+    SyntheticCloth: 500
 
 #prosthetics
 
@@ -96,7 +96,7 @@
     Glass: 200
     Steel: 10
     Plastic: 100
-    Cloth: 100
+    SyntheticCloth: 100
 
 - type: latheRecipe
   id: OrganSynthLungs
