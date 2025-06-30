@@ -4,4 +4,3 @@
   icon: { sprite: /Textures/_RPSX/Objects/Materials/materials.rsi, state: cloth }
   spawn: MaterialSyntheticCloth1
   maxCount: 30
-в
