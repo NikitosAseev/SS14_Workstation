@@ -1,7 +1,7 @@
 - type: cargoProduct
   id: SyntheticCloth
   icon:
-    sprite: /Textures/_RPSX/Objects/Materials/materials.rsi
+    sprite: _RPSX/Objects/Materials/materials.rsi
     state: cloth_3
   product: CrateSyntheticCloth
   cost: 3000
