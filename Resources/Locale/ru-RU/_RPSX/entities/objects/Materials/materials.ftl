@@ -1,0 +1,9 @@
+ent-SyntheticCloth = синтетическая ткань
+    .suffix = Полный
+    .desc = Специальный материал, разработанный НТ для для создания протезов для любой рассы с шансом приживания 99,9%.
+ent-SyntheticCloth10 = { ent-SyntheticCloth }
+    .suffix = 10
+    .desc = { ent-SyntheticCloth.desc }
+ent-SyntheticCloth1 = { ent-SyntheticCloth }
+    .suffix = Один
+    .desc = { ent-SyntheticCloth.desc }
