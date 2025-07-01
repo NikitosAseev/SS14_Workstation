@@ -1,23 +1,41 @@
 - type: entity
-  parent: MaterialCloth
+  parent: MaterialBase
   id: SyntheticCloth
   name: synthetic cloth
   suffix: Full
   components:
+  - type: Stack
+    stackType: SyntheticCloth
+    baseLayer: base
+    layerStates:
+      - syntheticCloth
+      - syntheticCloth_2
+      - syntheticCloth_3
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      SyntheticCloth: 100
   - type: Sprite
     sprite: _RPSX/Objects/Materials/materials.rsi
-    state: cloth_3
+    state: syntheticCloth_3
     layers:
-    - state: cloth_3
+    - state: syntheticCloth_3
       map: ["base"]
-
+  - type: Item
+    heldPrefix: syntheticCloth
+    size: Normal
+  - type: Tag
+    tags:
+      - Gauze
+      - RawMaterial
+      
 - type: entity
   parent: SyntheticCloth
   id: SyntheticCloth10
   suffix: 10
   components:
   - type: Sprite
-    state: cloth_2
+    state: syntheticCloth_2
   - type: Stack
     count: 10
 
@@ -27,6 +45,6 @@
   suffix: Single
   components:
   - type: Sprite
-    state: cloth_1
+    state: syntheticCloth_1
   - type: Stack
     count: 1

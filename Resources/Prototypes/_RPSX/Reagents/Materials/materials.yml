@@ -3,6 +3,8 @@
   stackEntity: SyntheticCloth1
   name: materials-synthetic-cloth
   unit: materials-unit-roll
-  icon: { sprite: /Textures/_RPSX/Objects/Materials/materials.rsi, state: cloth  }
+  icon:
+    sprite: _RPSX/Objects/Materials/materials.rsi
+    state: syntheticCloth
   color: "#e7e7de"
   price: 0.05

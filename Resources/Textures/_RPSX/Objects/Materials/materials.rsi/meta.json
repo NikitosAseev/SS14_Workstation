@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by ledniky DS+GS",
+  "license": "CC-BY-NC-SA-4.0",
+  "copyright": "RPS-eXtended & by ledniky, (discord:726481288713732147)",
   "size": {
     "x": 32,
     "y": 32
@@ -9,21 +9,21 @@
   "states": [
 
     {
-      "name": "cloth"
+      "name": "syntheticCloth"
     },
     {
-      "name": "cloth-inhand-left",
+      "name": "syntheticCloth-inhand-left",
       "directions": 4
     },
     {
-      "name": "cloth-inhand-right",
+      "name": "syntheticCloth-inhand-right",
       "directions": 4
     },
     {
-      "name": "cloth_2"
+      "name": "syntheticCloth_2"
     },
     {
-      "name": "cloth_3"
+      "name": "syntheticCloth_3"
     }
   ]
 }

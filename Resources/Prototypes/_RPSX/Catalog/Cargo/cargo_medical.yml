@@ -2,7 +2,7 @@
   id: SyntheticCloth
   icon:
     sprite: _RPSX/Objects/Materials/materials.rsi
-    state: cloth_3
+    state: syntheticCloth_3
   product: CrateSyntheticCloth
   cost: 3000
   category: cargoproduct-category-name-medical
