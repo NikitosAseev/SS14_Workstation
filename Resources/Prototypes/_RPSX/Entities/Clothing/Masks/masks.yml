@@ -1,0 +1,11 @@
+
+- type: entity
+  parent: ClothingMaskMime
+  id: ClothingMaskScream
+  name: ghost face
+  description: This mask is terrifying.
+  components:
+  - type: Sprite
+    sprite: _RPSX/Clothing/Head/Misc/scream.rsi
+  - type: Clothing
+    sprite: _RPSX/Clothing/Head/Misc/scream.rsi
