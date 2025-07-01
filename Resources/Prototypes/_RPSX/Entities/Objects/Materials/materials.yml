@@ -28,7 +28,7 @@
     tags:
       - Gauze
       - RawMaterial
-      
+
 - type: entity
   parent: SyntheticCloth
   id: SyntheticCloth10
