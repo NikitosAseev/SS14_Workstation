@@ -5,6 +5,6 @@
   description: This mask is terrifying...
   components:
   - type: Sprite
-    sprite: _RPSX/Clothing/Head/Misc/scream.rsi
+    sprite: _RPSX/Clothing/Head/Misc/ghostface.rsi
   - type: Clothing
-    sprite: _RPSX/Clothing/Head/Misc/scream.rsi
+    sprite: _RPSX/Clothing/Head/Misc/ghostface.rsi
