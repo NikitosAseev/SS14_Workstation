@@ -1,2 +1,2 @@
-ent-ClothingMaskScream = Маска "крик"
+ent-ClothingMaskScream = маска "Крик"
     .desc = Эта маска наводит ужас...

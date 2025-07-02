@@ -8,17 +8,3 @@
     sprite: _RPSX/Clothing/OuterClothing/Coats/adminitrator_coat.rsi
   - type: Clothing
     sprite: _RPSX/Clothing/OuterClothing/Coats/adminitrator_coat.rsi
-
-- type: entity
-  parent: ClothingOuterCoatDetectiveLoadoutGrey
-  id: ClothingOuterCoatDeathCloak
-  name: ghost cloak
-  description: This cloak is terrifying.
-  components:
-  - type: Sprite
-    sprite: _RPSX/Clothing/OuterClothing/Coats/scream.rsi
-  - type: Clothing
-    sprite: _RPSX/Clothing/OuterClothing/Coats/scream.rsi
-  - type: HideLayerClothing
-    slots:
-    - Hair
