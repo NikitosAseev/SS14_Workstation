@@ -25,7 +25,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakGhostface
-  name: ghostface cloak.
+  name: ghostface cloak
   description: This cloak is terrifying...
   components:
   - type: Sprite
