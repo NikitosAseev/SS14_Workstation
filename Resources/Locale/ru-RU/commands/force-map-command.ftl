@@ -1,6 +1,6 @@
 cmd-forcemap-desc = Принудительно устанавливает указанную карту для следующего раунда.
 cmd-forcemap-help = Использование: forcemap <map ID>
-cmd-forcemap-success = Установлена принудительная загрузка карты { $map } в следующем раунде.
-cmd-forcemap-cleared = Настройка принудительной карты сброшена.
-cmd-forcemap-map-not-found = Не найдено подходящей карты с именем { $map }.
+cmd-forcemap-success = Следующий раунд начнётся на карте { $map }.
+cmd-forcemap-cleared = Настройки принудительной карты очищены.
+cmd-forcemap-map-not-found = Не существует подходящей карты с названием { $map }.
 cmd-forcemap-hint = <map ID>

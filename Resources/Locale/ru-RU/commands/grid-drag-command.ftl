@@ -1,3 +1,3 @@
-cmd-griddrag-desc = Позволяет игрокам с правами перемещать игровые сетки.
+cmd-griddrag-desc = Позволяет пользователю с правами перемещать гриды.
 cmd-griddrag-help = Использование: griddrag
-cmd-griddrag-status = Режим перетаскивания сеток: { $status }.
+cmd-griddrag-status = Режим перемещения гридов: { $status }.
