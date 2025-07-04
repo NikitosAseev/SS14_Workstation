@@ -49,7 +49,7 @@ criminal-records-name-filter = Имя
 criminal-records-prints-filter = Отпечатки пальцев
 criminal-records-dna-filter = ДНК
 criminal-records-job-filter = Должность
-criminal-records-species-filter = Вид
+criminal-records-species-filter = Раса
 
 ## Arrest auto history lines
 
