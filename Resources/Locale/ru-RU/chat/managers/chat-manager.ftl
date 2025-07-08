@@ -126,11 +126,11 @@ chat-speech-verb-electricity-3 = скрипит
 
 ### Slugcat
 
-chat-speech-verb-name-wawa = Wawa
-chat-speech-verb-wawa-1 = intones
-chat-speech-verb-wawa-2 = states
-chat-speech-verb-wawa-3 = declares
-chat-speech-verb-wawa-4 = ponders
+chat-speech-verb-name-wawa = Вава
+chat-speech-verb-wawa-1 = произносит
+chat-speech-verb-wawa-2 = заявляет
+chat-speech-verb-wawa-3 = утверждает
+chat-speech-verb-wawa-4 = размышляет
 chat-speech-verb-name-slugcat = Слизнекотовый
 chat-speech-verb-slugcat-1 = интонирует
 chat-speech-verb-slugcat-2 = утверждает
