@@ -7,6 +7,7 @@ using Content.Shared.Clothing;
 using Content.Shared.Inventory.Events;
 using BreathToolComponent = Content.Shared.Atmos.Components.BreathToolComponent;
 using InternalsComponent = Content.Shared.Body.Components.InternalsComponent;
+using Content.Shared.Body.Organ;
 
 namespace Content.Server.Body.Systems;
 
@@ -59,8 +60,31 @@ public sealed class LungSystem : EntitySystem
         if (!_solutionContainerSystem.ResolveSolution(uid, lung.SolutionName, ref lung.Solution, out var solution))
             return;
 
-        GasToReagent(lung.Air, solution);
+        if (!TryComp<OrganComponent>(uid, out var organComp) || organComp.Body is not { } body) return;
+
+        GasToReagent(body, lung, solution);
         _solutionContainerSystem.UpdateChemicals(lung.Solution.Value);
+    }
+
+    private void GasToReagent(EntityUid user, LungComponent lungs, Solution solution)
+    {
+        foreach (var gasId in Enum.GetValues<Gas>())
+        {
+            var i = (int)gasId;
+            var moles = lungs.Air[i];
+            if (moles <= 0)
+                continue;
+
+            var reagent = _atmos.GasReagents[i];
+            if (reagent is null)
+                continue;
+
+            var amount = moles * Atmospherics.BreathMolesToReagentMultiplier;
+            solution.AddReagent(reagent, amount);
+
+            var ev = new OnEntityBreathGas(reagent, amount);
+            RaiseLocalEvent(user, ref ev);
+        }
     }
 
     /* This should really be moved to somewhere in the atmos system and modernized,
@@ -91,3 +115,6 @@ public sealed class LungSystem : EntitySystem
         return solution;
     }
 }
+
+[ByRefEvent]
+public record struct OnEntityBreathGas(string? Reagent, float Amount);
