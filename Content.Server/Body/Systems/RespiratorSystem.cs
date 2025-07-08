@@ -85,7 +85,14 @@ public sealed class RespiratorSystem : EntitySystem
 
             UpdateSaturation(uid, -(float)respirator.UpdateInterval.TotalSeconds, respirator);
 
-            if (!_mobState.IsIncapacitated(uid)) // cannot breathe in crit.
+            var processSaturationEv = new CanProcessEntitySaturation();
+            RaiseLocalEvent(ref processSaturationEv);
+
+            var saturationAttempt = new OnEntitySaturationAttempt();
+            RaiseLocalEvent(uid, ref saturationAttempt);
+
+            var saturationValid = !processSaturationEv.IgnoreAttempt && saturationAttempt.HasSaturation;
+            if (!_mobState.IsIncapacitated(uid) && saturationValid) // cannot breathe in crit.
             {
                 switch (respirator.Status)
                 {
@@ -490,4 +497,10 @@ public record struct ExhaledGasEvent(GasMixture Gas, bool Handled = false);
 // RPSX Surgery Start
 [ByRefEvent]
 public record struct OnEntityInhaleToLungs(float DamageLoss = 0f);
+
+[ByRefEvent]
+public record struct OnEntitySaturationAttempt(bool HasSaturation);
+
+[ByRefEvent]
+public record struct CanProcessEntitySaturation(bool IgnoreAttempt = true);
 // RPSX Surgery End
