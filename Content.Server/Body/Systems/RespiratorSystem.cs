@@ -22,7 +22,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Configuration;
 using Content.Shared.RPSX.CCVars;
-using Content.Server.Body.Events;
 
 namespace Content.Server.Body.Systems;
 
