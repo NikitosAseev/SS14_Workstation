@@ -38,15 +38,14 @@ public sealed class AddBodyPartCommand : LocalizedEntityCommands
             Enum.TryParse(args[4], out partSymmetry);
         }
 
-            if (Enum.TryParse<BodyPartType>(args[3], out var partType) &&
-                bodySystem.TryCreatePartSlotAndAttach(parentId.Value, args[2], childId.Value, partType, partSymmetry))
-            {
-                shell.WriteLine($@"Added {childId} to {parentId}.");
-            }
-            else
-            {
-                shell.WriteError($@"Could not add {childId} to {parentId}.");
-            }
+        if (Enum.TryParse<BodyPartType>(args[3], out var partType) &&
+            _bodySystem.TryCreatePartSlotAndAttach(parentId.Value, args[2], childId.Value, partType, partSymmetry))
+        {
+            shell.WriteLine($@"Added {childId} to {parentId}.");
+        }
+        else
+        {
+            shell.WriteError($@"Could not add {childId} to {parentId}.");
         }
     }
 }

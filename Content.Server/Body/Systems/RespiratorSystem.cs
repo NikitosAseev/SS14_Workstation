@@ -247,9 +247,46 @@ public sealed class RespiratorSystem : EntitySystem
         var splitGas = organs.Count == 1 ? gas : gas.RemoveRatio(lungRatio);
         foreach (var (organUid, lung, _) in organs)
         {
-            // Merge doesn't remove gas from the giver.
-            _atmosSys.Merge(lung.Air, splitGas);
-            _lungSystem.GasToReagent(organUid, lung);
+            // RPSX Surgery Start
+            if (!_cfg.GetCVar(RPSXCCVars.SurgeryEnabled))
+            {
+                _atmosSys.Merge(lung.Air, gas);
+                _lungSystem.GasToReagent(organUid, lung);
+            }
+            else
+            {
+                var lungEv = new OnEntityInhaleToLungs();
+                RaiseLocalEvent(entity, ref lungEv);
+
+                if (lungEv.DamageLoss > 0)
+                {
+                    if (!TryComp<RespiratorComponent>(entity, out var respirator))
+                        return false;
+
+                    var ev = new InhaleLocationEvent
+                    {
+                        Respirator = respirator,
+                    };
+                    RaiseLocalEvent(entity, ref ev);
+
+                    ev.Gas ??= _atmosSys.GetContainingMixture(entity.Owner, excite: true);
+
+                    if (ev.Gas is null)
+                    {
+                        return false;
+                    }
+
+                    var remainderGas = gas.RemoveRatio(1.0f - lungEv.DamageLoss);
+                    var removedGas = gas.RemoveRatio(lungEv.DamageLoss);
+                    _atmosSys.Merge(lung.Air, remainderGas);
+                    _atmosSys.Merge(ev.Gas, removedGas);
+                }
+                else
+                    _atmosSys.Merge(lung.Air, gas);
+
+                _lungSystem.GasToReagent(organUid, lung);
+            }
+            // RPSX Surgery End
         }
 
         return true;
@@ -449,3 +486,8 @@ public record struct InhaledGasEvent(GasMixture Gas, bool Handled = false, bool 
 
 [ByRefEvent]
 public record struct ExhaledGasEvent(GasMixture Gas, bool Handled = false);
+
+// RPSX Surgery Start
+[ByRefEvent]
+public record struct OnEntityInhaleToLungs(float DamageLoss = 0f);
+// RPSX Surgery End

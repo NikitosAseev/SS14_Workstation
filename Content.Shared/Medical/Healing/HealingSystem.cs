@@ -118,7 +118,7 @@ public sealed class HealingSystem : EntitySystem
 
         // RPSX Surgery Start
         var ev = new EntityHealedEvent(total);
-        RaiseLocalEvent(entity.Owner, ref ev);
+        RaiseLocalEvent(target.Owner, ref ev);
         // RPSX Surgery End
     }
 
@@ -245,3 +245,7 @@ public sealed class HealingSystem : EntitySystem
         return Math.Max(modifier, 1);
     }
 }
+
+
+[ByRefEvent]
+public record struct EntityHealedEvent(FixedPoint2 Healed);
