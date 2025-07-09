@@ -84,13 +84,17 @@ public sealed class RespiratorSystem : EntitySystem
 
             UpdateSaturation(uid, -(float)respirator.UpdateInterval.TotalSeconds, respirator);
 
-            var processSaturationEv = new CanProcessEntitySaturation();
-            RaiseLocalEvent(ref processSaturationEv);
+            var saturationValid = true;
+            if (!_cfg.GetCVar(RPSXCCVars.SurgeryEnabled))
+            {
+                var processSaturationEv = new CanProcessEntitySaturation();
+                RaiseLocalEvent(ref processSaturationEv);
 
-            var saturationAttempt = new OnEntitySaturationAttempt();
-            RaiseLocalEvent(uid, ref saturationAttempt);
+                var saturationAttempt = new OnEntitySaturationAttempt();
+                RaiseLocalEvent(uid, ref saturationAttempt);
 
-            var saturationValid = !processSaturationEv.IgnoreAttempt && saturationAttempt.HasSaturation;
+                saturationValid = !processSaturationEv.IgnoreAttempt && saturationAttempt.HasSaturation;
+            }
             if (!_mobState.IsIncapacitated(uid) && saturationValid) // cannot breathe in crit.
             {
                 switch (respirator.Status)
