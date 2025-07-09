@@ -33,7 +33,7 @@ alerts-crit-desc = Вы серьёзно ранены и без сознания
 alerts-dead-name = Смерть
 alerts-dead-desc = Вы мертвы. Учтите, что вас ещё можно воскресить!
 alerts-health-name = Здоровье
-alerts-health-desc = [color=green]Синий и зелёный[/color] хорошо. [color=red]Красный[/color] плохо.
+alerts-health-desc = [color=green]Зелёный[/color] хорошо. [color=red]Красный[/color] плохо.
 alerts-battery-name = Батарея
 alerts-battery-desc = Если батарея разрядится, вы не сможете использовать свои способности.
 alerts-no-battery-name = Нет батареи
@@ -78,3 +78,5 @@ alerts-revenant-corporeal-name = Материальность
 alerts-revenant-corporeal-desc = Вы физически воплотились. Окружающие могут видеть и наносить вам вред.
 alerts-rooted-name = Укоренены
 alerts-rooted-desc = Вы прикреплены к земле. Вы не можете подскользнуться, но вы будете впитывать все жидкости под вами.
+alerts-stealthy-name = Карманничество
+alerts-stealthy-desc = Определяет режим скрытой кражи. Нажмите для переключения.
