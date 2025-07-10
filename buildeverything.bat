@@ -1,27 +1,18 @@
 @echo off
 
-dotnet build -c Release
-cd RPSX
+set "FOLDER=.\RPSX"
 
-if exist .\Content.RPSX.Shared (
-    dotnet build -c Release Content.RPSX.Shared
+rem Проверим, есть ли в папке хоть один файл или подкаталог
+dir /b "%FOLDER%" | findstr . >nul
+
+if errorlevel 1 (
+    echo RPSX is empty. Building public part...
+    dotnet build -c Release SpaceStation14.sln
 ) else (
-    echo The Content.RPSX.Shared project does not exist.
-)
-if exist .\Content.RPSX.Server (
-    dotnet build -c Release Content.RPSX.Server
-) else (
-    echo The Content.RPSX.Server project does not exist.
-)
-if exist .\Content.RPSX.Client (
-    dotnet build -c Release Content.RPSX.Client
-) else (
-    echo The Content.RPSX.Client project does not exist.
-)
-if exist .\sync.sh (
+    echo RPSX is not empty. Building hole part...
+    dotnet build -c Release RPSX.sln
+    cd RPSX
     .\sync.sh -y
-) else (
-    echo The sync file does not exist.
 )
 
 cd ..
