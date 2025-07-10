@@ -85,7 +85,7 @@ public sealed class RespiratorSystem : EntitySystem
             UpdateSaturation(uid, -(float)respirator.UpdateInterval.TotalSeconds, respirator);
 
             var saturationValid = true;
-            if (!_cfg.GetCVar(RPSXCCVars.SurgeryEnabled))
+            if (_cfg.GetCVar(RPSXCCVars.SurgeryEnabled))
             {
                 var processSaturationEv = new CanProcessEntitySaturation();
                 RaiseLocalEvent(ref processSaturationEv);
@@ -260,7 +260,7 @@ public sealed class RespiratorSystem : EntitySystem
             // RPSX Surgery Start
             if (!_cfg.GetCVar(RPSXCCVars.SurgeryEnabled))
             {
-                _atmosSys.Merge(lung.Air, gas);
+                _atmosSys.Merge(lung.Air, splitGas);
                 _lungSystem.GasToReagent(organUid, lung);
             }
             else
@@ -286,13 +286,13 @@ public sealed class RespiratorSystem : EntitySystem
                         return false;
                     }
 
-                    var remainderGas = gas.RemoveRatio(1.0f - lungEv.DamageLoss);
-                    var removedGas = gas.RemoveRatio(lungEv.DamageLoss);
+                    var remainderGas = splitGas.RemoveRatio(1.0f - lungEv.DamageLoss);
+                    var removedGas = splitGas.RemoveRatio(lungEv.DamageLoss);
                     _atmosSys.Merge(lung.Air, remainderGas);
                     _atmosSys.Merge(ev.Gas, removedGas);
                 }
                 else
-                    _atmosSys.Merge(lung.Air, gas);
+                    _atmosSys.Merge(lung.Air, splitGas);
 
                 _lungSystem.GasToReagent(organUid, lung);
             }

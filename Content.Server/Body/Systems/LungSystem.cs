@@ -62,16 +62,16 @@ public sealed class LungSystem : EntitySystem
 
         if (!TryComp<OrganComponent>(uid, out var organComp) || organComp.Body is not { } body) return;
 
-        GasToReagent(body, lung, solution);
+        GasToReagent(body, lung.Air, solution);
         _solutionContainerSystem.UpdateChemicals(lung.Solution.Value);
     }
 
-    private void GasToReagent(EntityUid user, LungComponent lungs, Solution solution)
+    private void GasToReagent(EntityUid user, GasMixture gas, Solution solution)
     {
         foreach (var gasId in Enum.GetValues<Gas>())
         {
             var i = (int)gasId;
-            var moles = lungs.Air[i];
+            var moles = gas[i];
             if (moles <= 0)
                 continue;
 
