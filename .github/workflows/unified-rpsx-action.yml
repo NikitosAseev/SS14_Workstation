@@ -141,7 +141,7 @@ jobs:
         with:
           dotnet-version: 9.0.x
       - name: Install dependencies
-        run: dotnet restore RPSX
+        run: dotnet restore RPSX.sln
       - name: Build Packaging
         run: dotnet build Content.Packaging --configuration Release --no-restore /m
       - name: Package server
