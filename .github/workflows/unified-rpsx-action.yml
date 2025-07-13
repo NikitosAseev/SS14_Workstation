@@ -159,6 +159,8 @@ jobs:
       - test-packaging
     if: always()
     steps:
+      - name: Checkout Master
+        uses: actions/checkout@v4.2.2
       - name: Comment on PR with summary
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN_FOR_COMMENTS }}
