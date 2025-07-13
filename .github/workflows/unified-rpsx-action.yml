@@ -157,22 +157,46 @@ jobs:
       - build-test-debug
       - build-test-maprenderer
       - test-packaging
+    if: always()
     steps:
       - name: Comment on PR with summary
         env:
-          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN_FOR_COMMENTS }}
         run: |
           gh auth login --with-token <<< "$GH_TOKEN"
           PR_NUM=${{ github.event.pull_request.number }}
+          RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+      
           STATUS_YAML=${{ needs.yaml-linter.result }}
           STATUS_DEBUG=${{ needs.build-test-debug.result }}
           STATUS_MAP=${{ needs.build-test-maprenderer.result }}
           STATUS_PACK=${{ needs.test-packaging.result }}
+      
+          comment="## 🔎 CI Summary\n"
+      
+          comment+="- YAML Linter: $STATUS_YAML"
+          if [ "$STATUS_YAML" != "success" ]; then
+            comment+=" ([logs]($RUN_URL))"
+          fi
+          comment+="\n"
+      
+          comment+="- Build & Test Debug: $STATUS_DEBUG"
+          if [ "$STATUS_DEBUG" != "success" ]; then
+            comment+=" ([logs]($RUN_URL))"
+          fi
+          comment+="\n"
+      
+          comment+="- Map Renderer: $STATUS_MAP"
+          if [ "$STATUS_MAP" != "success" ]; then
+            comment+=" ([logs]($RUN_URL))"
+          fi
+          comment+="\n"
+      
+          comment+="- Packaging: $STATUS_PACK"
+          if [ "$STATUS_PACK" != "success" ]; then
+            comment+=" ([logs]($RUN_URL))"
+          fi
+          comment+="\n"
+      
+          gh pr comment "$PR_NUM" --body "$comment"
 
-          COMMENT="## CI Summary\n"
-          COMMENT+="YAML Linter: $STATUS_YAML\n"
-          COMMENT+="Build & Test Debug: $STATUS_DEBUG\n"
-          COMMENT+="Build & Test Map Renderer: $STATUS_MAP\n"
-          COMMENT+="Test Packaging: $STATUS_PACK\n"
-
-          gh pr comment $PR_NUM --body "$COMMENT"
