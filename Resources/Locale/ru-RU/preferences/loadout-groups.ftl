@@ -59,7 +59,11 @@ loadout-group-chaplain-mask = Священник, маска
 loadout-group-chaplain-jumpsuit = Священник, комбинезон
 loadout-group-chaplain-outerclothing = Священник, верхняя одежда
 loadout-group-chaplain-neck = Священник, шея
+<<<<<<< HEAD
 Janitor-loadout = Снаряжение уборщика
+=======
+loadout-group-chaplain-bible = Святая книга
+>>>>>>> 000b4a29ae (07 21 translate)
 loadout-group-janitor-head = Уборщик, голова
 loadout-group-janitor-jumpsuit = Уборщик, комбинезон
 loadout-group-janitor-gloves = Уборщик, перчатки

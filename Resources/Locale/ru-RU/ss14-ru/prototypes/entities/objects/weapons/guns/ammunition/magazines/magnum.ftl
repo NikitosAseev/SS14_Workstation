@@ -1,7 +1,10 @@
 ent-BaseMagazineMagnum = пистолетный магазин (.45 магнум)
     .desc = { ent-BaseMagazinePistol.desc }
+<<<<<<< HEAD
 ent-BaseMagazineMagnumSubMachineGun = магазин Вектора (.45 магнум)
     .desc = { ent-BaseItem.desc }
+=======
+>>>>>>> 000b4a29ae (07 21 translate)
 ent-MagazineMagnumEmpty = пистолетный магазин (.45 магнум любые)
     .suffix = Пустой
     .desc = { ent-BaseMagazineMagnum.desc }
@@ -13,6 +16,7 @@ ent-MagazineMagnumUranium = пистолетный магазин (.45 магн�
     .desc = { ent-BaseMagazineMagnum.desc }
 ent-MagazineMagnumAP = пистолетный магазин (.45 магнум бронебойные)
     .desc = { ent-BaseMagazineMagnum.desc }
+<<<<<<< HEAD
 ent-MagazineMagnumSubMachineGunEmpty = магазин Вектора (.45 магнум любые)
     .suffix = Пустой
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
@@ -24,3 +28,5 @@ ent-MagazineMagnumSubMachineGunUranium = магазин Вектора (.45 ма
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
 ent-MagazineMagnumSubMachineGunPiercing = магазин Вектора (.45 магнум бронебойные)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
+=======
+>>>>>>> 000b4a29ae (07 21 translate)

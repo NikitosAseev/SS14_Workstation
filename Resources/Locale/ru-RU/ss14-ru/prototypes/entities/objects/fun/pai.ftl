@@ -1,5 +1,6 @@
 ent-PersonalAI = персональный ИИ
     .desc = Ваш электронный друг, с которым весело!
+<<<<<<< HEAD
 # Corvax-HiddenDesc-Start
 ent-SyndicatePersonalAI = персональный ИИ
     .suffix = Синдикат
@@ -7,6 +8,12 @@ ent-SyndicatePersonalAI = персональный ИИ
 ent-GoldenPersonalAI = golden personal ai device
     .desc = Your electronic pal who's fun to be with! Special golden edition!
 # Corvax-HiddenDesc-End
+=======
+ent-SyndicatePersonalAI = персональный ИИ Синдиката
+    .desc = Ваш электронный друг, созданный Синдикатом!
+ent-GoldenPersonalAI = золотой персональный ИИ
+    .desc = Ваш электронный друг, с которым весело! Специальное золотае издание!
+>>>>>>> 000b4a29ae (07 21 translate)
 ent-PotatoAI = картофельный ИИ
     .desc = Это картофелина. Вы заставили её быть разумной, вы, монстр.
 ent-ActionPAIOpenShop = Каталог программ

@@ -95,5 +95,10 @@ reagent-physical-desc-alkaline = щелочное
 reagent-physical-desc-holy = святое
 reagent-physical-desc-slimy = склизкое
 reagent-physical-desc-neural = нейронное
+<<<<<<< HEAD
 reagent-physical-desc-unidentifiable = неопознанное
 reagent-physical-desc-non-newtonian = non-newtonian
+=======
+reagent-physical-desc-unidentifiable = неидентифицируемое
+reagent-physical-desc-non-newtonian = неньютоновское
+>>>>>>> 000b4a29ae (07 21 translate)

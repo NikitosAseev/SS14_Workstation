@@ -118,12 +118,19 @@ ent-MobSlug = слизняк
     .suffix = ИИ
 ent-MobFrog = лягушка
     .desc = Прыг прыг прыг. Выглядит мокрой.
+<<<<<<< HEAD
     .suffix = ИИ
 ent-MobParrotBase = { ent-SimpleMobBase }
     .desc = Infiltrates your domain, spies on you, and somehow still a cool pet.
 ent-MobParrot = попугай
     .desc = Проникает в ваши владения, шпионит за вами и при этом остаётся классным питомцем.
     .suffix = ИИ
+=======
+ent-MobParrotBase = попугай
+    .desc = Проникает в ваши владения, шпионит за вами и при этом остаётся классным питомцем.
+ent-MobParrot = { ent-MobParrotBase.desc }
+    .desc = { ent-MobParrotBase }
+>>>>>>> 000b4a29ae (07 21 translate)
 ent-MobPenguin = пингвин
     .desc = Их жизнь - это постоянная боль из-за коленных суставов внутри тела.
     .suffix = ИИ
