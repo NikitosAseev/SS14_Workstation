@@ -1,5 +1,9 @@
 ent-NTDefaultCircuitBoard = плата законов (NT стандарт)
     .desc = Электронная плата, хранящая набор законов 'NT стандарт'.
+ent-AsimovCircuitBoard = law board (Crewsimov)
+    .desc = An electronics board containing the Crewsimov lawset.
+ent-CorporateCircuitBoard = law board (Corporate)
+    .desc = An electronics board containing the Corporate lawset.
 ent-CommandmentCircuitBoard = плата законов (Десять заповедей)
     .desc = Электронная плата, хранящая набор законов 'Десять заповедей'.
 ent-PaladinCircuitBoard = плата законов (Паладин)

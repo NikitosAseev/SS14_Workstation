@@ -12,3 +12,5 @@ ent-DrinkJigger = джиггер
     .desc = Как шейкер, только меньше. Используется для регулировки количества ингредиентов.
 ent-DrinkIceBucket = ведёрко для льда
     .desc = Специальное ведёрко с освежающим льдом. Запрещено использовать для одноимённого челленджа!
+ent-Pitcher = metal pitcher
+    .desc = A stainless steel insulated pitcher. Everyone's best friend in the morning.

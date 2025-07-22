@@ -172,3 +172,5 @@ ent-ClothingHeadHatBeretMedic = берет врача
     .desc = Белый берет, призывающий вас к чистоте.
 ent-ClothingHeadHatSolidHeadband = солидная головная повязка
     .desc = Нося её, вы будете чувствовать себя невидимкой! (ДИСКЛЕЙМЕР: НА САМОМ ДЕЛЕ ЭТО НЕ ДЕЛАЕТ ВЛАДЕЛЬЦА НЕВИДИМЫМ)
+ent-ClothingHeadPropellerHat = propeller hat
+    .desc = You're the bestest boy.
