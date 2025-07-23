@@ -26,7 +26,7 @@ ent-EnergySwordDouble = игрушечный двухклинковый меч
 ent-HyperEutacticBlade = Гиперэвтактический меч
     .desc = Сверхмассивное оружие, способное разорвать на части саму ткань пространства и времени, гиперэвтактический меч динамически приобретает гиперэвтактическую кристаллическую наноструктуру, способную проходить сквозь большинство известных форм материи, как горячий нож сквозь масло.
 ent-EnergyDaggerLoudBlue = { ent-EnergyDaggerLoud }
-    .suffix = blue
+    .suffix = синий
     .desc = { ent-EnergyDaggerLoud.desc }
 
 # Corvax-HiddenDesc-End
