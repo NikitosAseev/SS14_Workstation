@@ -8,8 +8,8 @@ loadouts-min-limit = Мин. кол-во: { $count }
 loadouts-max-limit = Макс. кол-во: { $count }
 loadouts-points-limit = Очки: { $count } / { $max }
 loadouts-count-items-in-group =
-    { $item } and { $count } other { $count ->
-        [1] item
-       *[other] items
+    { $item } и { $count } других { $count ->
+        [1] предмеа
+       *[other] предметов
     }
 loadouts-points-restriction = Не хватает очков

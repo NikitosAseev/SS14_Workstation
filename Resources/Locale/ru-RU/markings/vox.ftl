@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-marking-TattooVoxHeartLeftArm-heart_l_arm = Vox Left Arm Tattoo (Heart)
-marking-TattooVoxHeartLeftArm = Vox Left Arm Tattoo (Heart)
-marking-TattooVoxHeartRightArm-heart_r_arm = Vox Right Arm Tattoo (Heart)
-marking-TattooVoxHeartRightArm = Vox Right Arm Tattoo (Heart)
-marking-TattooVoxHiveChest-hive_s = Vox Chest Tattoo (hive)
-marking-TattooVoxHiveChest = Vox Chest Tattoo (hive)
-marking-TattooVoxNightlingChest-nightling_s = Vox Chest Tattoo (nightling)
-marking-TattooVoxNightlingChest = Vox Chest Tattoo (nightling)
-marking-VoxScarEyeRight-vox_scar_eye_right = Right Eye Scar
-marking-VoxScarEyeRight = Eye Scar (Right)
-=======
 marking-TattooVoxHeartLeftArm-heart_l_arm = Вокс, Левая рука, Татуировка (Сердце)
 marking-TattooVoxHeartLeftArm = Вокс, Левая рука, Татуировка (Сердце)
 marking-TattooVoxHeartRightArm-heart_r_arm = Вокс, Правая рука, Татуировка (Сердце)
@@ -20,8 +8,7 @@ marking-TattooVoxNightlingChest-nightling_s = Вокс, Грудь, Татуир
 marking-TattooVoxNightlingChest = Вокс, Грудь, Татуировка (Найтлинг)
 marking-VoxScarEyeRight-vox_scar_eye_right = Шрам на глазу (Правый)
 marking-VoxScarEyeRight = Шрам на глазу (Правый)
->>>>>>> 000b4a29ae (07 21 translate)
-marking-VoxScarEyeLeft-vox_scar_eye_left = Left Eye Scar
+marking-VoxScarEyeLeft-vox_scar_eye_left = Шрам на левом глазу
 marking-VoxScarEyeLeft = Шрам на глазу (Левый)
 marking-VoxScarTopSurgeryShort-vox_scar_top_surgery_short = Шрам (Торакотомия)
 marking-VoxScarTopSurgeryShort = Шрам (Торакотомия)

@@ -50,7 +50,7 @@ loadout-group-chef-jumpsuit = Шеф-повар, комбинезон
 loadout-group-chef-outerclothing = Шеф-повар, верхняя одежда
 Librarian-loadout = Снаряжение библиотекаря
 loadout-group-librarian-jumpsuit = Библиотекарь, комбинезон
-loadout-group-chaplain-bible = Holy Book
+loadout-group-chaplain-bible = Священная книга
 loadout-group-lawyer-jumpsuit = Адвокат, комбинезон
 loadout-group-lawyer-neck = Адвокат, шея
 Chaplain-loadout = Снаряжение священника
@@ -59,11 +59,7 @@ loadout-group-chaplain-mask = Священник, маска
 loadout-group-chaplain-jumpsuit = Священник, комбинезон
 loadout-group-chaplain-outerclothing = Священник, верхняя одежда
 loadout-group-chaplain-neck = Священник, шея
-<<<<<<< HEAD
 Janitor-loadout = Снаряжение уборщика
-=======
-loadout-group-chaplain-bible = Святая книга
->>>>>>> 000b4a29ae (07 21 translate)
 loadout-group-janitor-head = Уборщик, голова
 loadout-group-janitor-jumpsuit = Уборщик, комбинезон
 loadout-group-janitor-gloves = Уборщик, перчатки

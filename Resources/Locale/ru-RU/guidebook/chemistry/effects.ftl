@@ -81,15 +81,15 @@ reagent-effect-guidebook-even-health-change =
     { $chance ->
         [1]
             { $healsordeals ->
-                [heals] Evenly heals
-                [deals] Evenly deals
-               *[both] Evenly modifies health by
+                [heals] Равномерно восстанавливает
+                [deals] Равномерно распределяется
+               *[both] Равномерно изменяет здоровье на
             }
        *[other]
             { $healsordeals ->
-                [heals] evenly heal
-                [deals] evenly deal
-               *[both] evenly modify health by
+                [heals] равномерно восстанавливают
+                [deals] равномерно распределяется
+               *[both] равномерно изменяют здоровье на
             }
     } { $changes }
 reagent-effect-guidebook-status-effect =
@@ -242,9 +242,9 @@ reagent-effect-guidebook-drunk =
     } опьянение
 reagent-effect-guidebook-emote =
     { $chance ->
-        [1] Will force
-       *[other] force
-    } the metabolizer to [bold][color=white]{ $emote }[/color][/bold]
+        [1] Заставляет
+       *[other] заставляют
+    } метаболизатор [bold][color=white]{ $emote }[/color][/bold]
 reagent-effect-guidebook-electrocute =
     { $chance ->
         [1] Бьёт током
@@ -359,19 +359,16 @@ reagent-effect-guidebook-artifact-unlock =
         [1] Помогает
        *[other] помогают
     } открыть инопланетный артефакт.
-reagent-effect-guidebook-artifact-durability-restore = Restores { $restored } durability in active alien artifact nodes.
+reagent-effect-guidebook-artifact-durability-restore = Восстанавливает { $restored } прочности активных узлов инопланетного артефакта.
 reagent-effect-guidebook-add-to-solution-reaction =
     { $chance ->
         [1] Заставляет
        *[other] заставляют
     } химикаты, применённые к объекту, добавиться во внутренний контейнер для растворов этого объекта
-<<<<<<< HEAD
-=======
 reagent-effect-guidebook-artifact-durability-restore = Восстанавливает { $restored } { $restored ->
         [1] прочность
         *[other] прочности
         } активного узла космического артефакта.
->>>>>>> 000b4a29ae (07 21 translate)
 reagent-effect-guidebook-plant-attribute =
     { $chance ->
         [1] Изменяет

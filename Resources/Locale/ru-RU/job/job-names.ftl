@@ -1,57 +1,3 @@
-<<<<<<< HEAD
-job-name-warden = Смотритель
-job-name-security = Офицер СБ
-job-name-cadet = Кадет СБ
-job-name-hos = Глава Службы Безопасности
-job-name-detective = Детектив
-job-name-brigmedic = Бригмедик
-job-name-borg = Киборг
-job-name-scientist = Учёный
-job-name-research-assistant = Научный ассистент
-job-name-rd = Научный Руководитель
-job-name-psychologist = Психолог
-job-name-intern = Интерн
-job-name-doctor = Врач
-job-name-paramedic = Парамедик
-job-name-cmo = Главный врач
-job-name-chemist = Химик
-job-name-technical-assistant = Технический ассистент
-job-name-engineer = Инженер
-job-name-atmostech = Атмосферный техник
-job-name-hop = Глава Персонала
-job-name-captain = Капитан
-job-name-serviceworker = Сервисный работник
-job-name-centcomoff = Представитель Центкома
-job-name-cburn = Агент РХБЗЗ
-job-name-deathsquad = Агент ДСО
-job-name-reporter = Репортёр
-job-name-musician = Музыкант
-job-name-librarian = Библиотекарь
-job-name-lawyer = Адвокат
-job-name-mime = Мим
-job-name-ce = Старший Инженер
-job-name-janitor = Уборщик
-job-name-chaplain = Священник
-job-name-botanist = Ботаник
-job-name-bartender = Бармен
-job-name-passenger = Пассажир
-job-name-salvagespec = Утилизатор
-job-name-station-ai = Станционный ИИ
-job-name-qm = Квартирмейстер
-job-name-cargotech = Грузчик
-job-name-chef = Шеф-повар
-job-name-clown = Клоун
-job-name-ertleader = Лидер Обр
-job-name-ertchaplain = Священник ОБР
-job-name-ertengineer = Инженер ОБР
-job-name-ertsecurity = Офицер Безопасности ОБР
-job-name-ertmedic = Медик Обр
-job-name-ertjanitor = Уборщик Обр
-job-name-boxer = Боксёр
-job-name-zookeeper = Зоотехник
-job-name-visitor = Посетитель
-job-name-cluwne = Cluwne
-=======
 job-name-warden = смотритель
 job-name-security = офицер СБ
 job-name-cadet = кадет СБ
@@ -104,7 +50,6 @@ job-name-boxer = боксёр
 job-name-zookeeper = зоотехник
 job-name-visitor = посетитель
 job-name-cluwne = клувень
->>>>>>> 000b4a29ae (07 21 translate)
 # unused jobs
 # these are required for the agent ID job icon tooltips
 # I am keeping them for roleplaying opportunities

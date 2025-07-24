@@ -52,7 +52,7 @@ flavor-base-horrible = ужасно
 flavor-base-terrible = ужасающе
 flavor-base-mindful = разумно
 flavor-base-chewy = жевательно
-flavor-base-trashy = trashy
+flavor-base-trashy = безвкусный
 
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.
@@ -186,7 +186,7 @@ flavor-complex-true-nature = как истинная природа реальн
 flavor-complex-false-meat = как не совсем не мясо
 flavor-complex-paper = как кашеобразная масса
 flavor-complex-compressed-meat = как спрессованное мясо
-flavor-complex-dog-food = like dog food
+flavor-complex-dog-food = как собачий корм
 
 # Drink-specific flavors.
 

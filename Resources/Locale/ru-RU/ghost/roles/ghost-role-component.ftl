@@ -45,15 +45,9 @@ ghost-role-information-silicon-rules =
 ghost-role-information-mouse-name = Мышь
 ghost-role-information-mouse-description = Голодная и озорная мышь.
 ghost-role-information-mothroach-name = Таракамоль
-<<<<<<< HEAD
-ghost-role-information-moproach-name = Moproach
-ghost-role-information-moproach-description = A cute mothroach with more cute moplike shoes on its feet.
-ghost-role-information-mothroach-description = Милая озорная таракамоль.
-=======
 ghost-role-information-mothroach-description = Милая озорная таракамоль.
 ghost-role-information-moproach-name = Швабракан
 ghost-role-information-moproach-description = Милый швабракан с ещё более милыми тапочками-швабрами на ногах.
->>>>>>> 000b4a29ae (07 21 translate)
 ghost-role-information-snail-name = Улитка
 ghost-role-information-snail-description = Маленькая улитка, которая не против немного побыть на свободе. Только не убегай за пределы клетки!
 ghost-role-information-snailspeed-name = Улитка
@@ -251,8 +245,8 @@ ghost-role-information-artifact-description = Осуществляйте сво�
 ghost-role-information-gingerbread-name = Пряничный человечек
 ghost-role-information-wizard-name = Волшебник
 ghost-role-information-wizard-desc = ВЫ - ВОЛШЕБНИК! Покажите станции, из чего состоит ваше волшебство.
-ghost-role-information-emotional-support-scurret-name = Emotional Support Scurret
-ghost-role-information-emotional-support-scurret-description = Support the crew, be adorable, say "wa" a lot.
+ghost-role-information-emotional-support-scurret-name = Эмоциональная поддержка Слизнекота
+ghost-role-information-emotional-support-scurret-description = Поддерживайте экипаж, будьте милым, часто говорите "ва".
 ghost-role-information-gingerbread-description =
     Существо чистого праздничного духа.
     Распространяйте паточную вкуснятину и хорошее настроение.

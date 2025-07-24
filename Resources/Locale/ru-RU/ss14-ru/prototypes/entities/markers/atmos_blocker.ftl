@@ -13,5 +13,5 @@ ent-AtmosFixFreezerMarker = атмос фикс холодильник марк�
 ent-AtmosFixVoxMarker = { ent-AtmosFixNitrogenMarker }
     .desc = Азот @ 101 кПа, 20°
     .suffix = Вокс-бокс
-ent-AtmosFixAirMarker = Atmos Fix Air Marker
-    .desc = Oxygen (21%) and nitrogen (79%) @ gas miner pressure, T20C
+ent-AtmosFixAirMarker = Маркер атмосферного воздуха
+    .desc = Кислород (21%) и азот (79%) @ давление газового майнера, 20°C
