@@ -5,8 +5,8 @@ ent-PersonalAI = персональный ИИ
 ent-SyndicatePersonalAI = персональный ИИ
     .suffix = Синдикат
     .desc = Новейшая модель вашего электронного друга! Теперь веселье засияет новыми красками!
-ent-GoldenPersonalAI = golden personal ai device
-    .desc = Your electronic pal who's fun to be with! Special golden edition!
+ent-GoldenPersonalAI = золотой персональный ИИ
+    .desc = Ваш электронный друг, с которым весело! Специальное золотае издание!
 # Corvax-HiddenDesc-End
 =======
 ent-SyndicatePersonalAI = персональный ИИ Синдиката
