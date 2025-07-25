@@ -116,17 +116,10 @@ figurines-ce-6 = Электричества нет, опять.
 figurines-engineer-1 = СИНГУЛЯРНОСТЬ СБЕЖАЛА!
 figurines-engineer-2 = ТЕСЛА СБЕЖАЛА!
 figurines-engineer-3 = Что такое ДАМ?
-<<<<<<< HEAD
-figurines-engineer-4 = Бесплатные изолированные перчатки в инженерном
-figurines-engineer-5 = Куда делась энергия?
-figurines-engineer-6 = Кто-то взорвал медицинский отдел... снова...
-figurines-engineer-7 = Ну так почему бы тебе не прийти и не починить это?
-=======
 figurines-engineer-4 = Бесплатные изольки в инженерке!
 figurines-engineer-5 = Куда пропало электричество?
-figurines-engineer-6 = Кто-то разбомбил медблок... Опять...
+figurines-engineer-6 = Кто-то взорвал медицинский отдел... Опять...
 figurines-engineer-7 = Почему бы тебе самому не прийти и не починить это?
->>>>>>> 000b4a29ae (07 21 translate)
 figurines-atmostech-1 = Я поместил плазму в дистру.
 figurines-atmostech-2 = Я сожгу тебя в камере сгорания.
 figurines-atmostech-3 = Фрезон...
