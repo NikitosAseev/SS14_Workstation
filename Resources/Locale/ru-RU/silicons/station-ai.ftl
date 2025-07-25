@@ -20,7 +20,7 @@ station-ai-customization-menu = Настройка ИИ
 station-ai-customization-categories = Категории
 station-ai-customization-options = Варианты (выбор одного)
 station-ai-customization-core = Отображение ядра ИИ
-station-ai-customization-hologram = Голографические аватарыs
+station-ai-customization-hologram = Голографические аватары
 # Customizations
 station-ai-icon-ai = Призрак в машине
 station-ai-icon-angel = Ангел-хранитель
