@@ -32,7 +32,7 @@ ent-ActionActivateDnaScramblerImplant = Перемешать ДНК
     .desc = Меняет ваше имя и внешность случайным образом.
 ent-ActionToggleSuitPiece = Переключить элементы костюма
     .desc = Не забудьте экипировать важные части костюма, прежде чем приступать к действиям.
-ent-ActionCombatModeToggle =  [color=red]Боевой режим[/color]
+ent-ActionCombatModeToggle = [color=red]Боевой режим[/color]
     .desc = Войти в боевой режим
 ent-ActionCombatModeToggleOff = { ent-ActionCombatModeToggle }
     .desc = { ent-ActionCombatModeToggle.desc }
@@ -58,12 +58,12 @@ ent-ActionToggleEyes = Открыть/закрыть глаза
     .desc = Закройте глаза, чтобы защитить их, или откройте, чтобы насладиться яркими цветами.
 ent-ActionToggleWagging = action-name-toggle-wagging
     .desc = action-description-toggle-wagging
-ent-FakeMindShieldToggleAction =  [color=green]Переключить поддельный "Щит Разума"[/color]
+ent-FakeMindShieldToggleAction = [color=green]Переключить поддельный "Щит Разума"[/color]
     .desc = Включить/выключить работу импланта.
 ent-ActionToggleParamedicSiren = Переключить сирену парамедика
     .desc = Включает или выключает сирену парамедика.
 ent-ActionGravityJump = Прыгнуть
-    .desc = Активируя усовершенствованную систему перемещения, вы совершаете короткий прыжок в направлении вашего взгляда..
+    .desc = Активируя усовершенствованную систему перемещения, вы совершаете короткий прыжок в направлении вашего взгляда.
 ent-ActionToggleRootable = Укоренение
     .desc = Начните или прекратите укореняться к полу.
 ent-ActionChameleonController = Управление одеждой
