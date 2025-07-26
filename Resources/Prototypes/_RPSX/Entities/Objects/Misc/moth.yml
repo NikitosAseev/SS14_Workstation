@@ -1,0 +1,19 @@
+- type: entity
+  id: WingsMoth2
+  name: "крылья Моли"
+  parent: PartMoth
+  components:
+  - type: Sprite
+    netsync: true
+    sprite: Mobs/Customization/Moth/moth_wings.rsi
+    state: wings_icon
+  - type: Icon
+    sprite: Mobs/Customization/Moth/moth_wings.rsi
+    state: wings_icon
+  - type: BodyPart
+    partType: Wings
+  - type: SurgeryBodyPart
+    state:
+      exoSkeleton: false
+    visuals:
+      speciesSprite: MobHumanoidAnyMarking
