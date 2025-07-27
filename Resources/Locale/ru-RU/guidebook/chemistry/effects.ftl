@@ -77,6 +77,21 @@ reagent-effect-guidebook-health-change =
                *[both] изменяют здоровье на
             }
     } { $changes }
+reagent-effect-guidebook-even-health-change =
+    { $chance ->
+        [1]
+            { $healsordeals ->
+                [heals] Равномерно восстанавливает
+                [deals] Равномерно распределяется
+               *[both] Равномерно изменяет здоровье на
+            }
+       *[other]
+            { $healsordeals ->
+                [heals] равномерно восстанавливают
+                [deals] равномерно распределяется
+               *[both] равномерно изменяют здоровье на
+            }
+    } { $changes }
 reagent-effect-guidebook-status-effect =
     { $type ->
         [add]
@@ -225,6 +240,11 @@ reagent-effect-guidebook-drunk =
         [1] Вызывает
        *[other] вызывают
     } опьянение
+reagent-effect-guidebook-emote =
+    { $chance ->
+        [1] Заставляет
+       *[other] заставляют
+    } метаболизатор [bold][color=white]{ $emote }[/color][/bold]
 reagent-effect-guidebook-electrocute =
     { $chance ->
         [1] Бьёт током
@@ -339,11 +359,16 @@ reagent-effect-guidebook-artifact-unlock =
         [1] Помогает
        *[other] помогают
     } открыть инопланетный артефакт.
+reagent-effect-guidebook-artifact-durability-restore = Восстанавливает { $restored } прочности активных узлов инопланетного артефакта.
 reagent-effect-guidebook-add-to-solution-reaction =
     { $chance ->
         [1] Заставляет
        *[other] заставляют
     } химикаты, применённые к объекту, добавиться во внутренний контейнер для растворов этого объекта
+reagent-effect-guidebook-artifact-durability-restore = Восстанавливает { $restored } { $restored ->
+        [1] прочность
+        *[other] прочности
+        } активного узла космического артефакта.
 reagent-effect-guidebook-plant-attribute =
     { $chance ->
         [1] Изменяет
