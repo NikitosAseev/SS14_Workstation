@@ -81,14 +81,14 @@ reagent-effect-guidebook-even-health-change =
     { $chance ->
         [1]
             { $healsordeals ->
-                [heals] Равномерно восстанавливает
-                [deals] Равномерно распределяется
+                [heals] Равномерно лечит
+                [deals] Равномерно наносит
                *[both] Равномерно изменяет здоровье на
             }
        *[other]
             { $healsordeals ->
-                [heals] равномерно восстанавливают
-                [deals] равномерно распределяется
+                [heals] раномерно лечат
+                [deals] равномерно наносят
                *[both] равномерно изменяют здоровье на
             }
     } { $changes }
@@ -110,11 +110,6 @@ reagent-effect-guidebook-status-effect =
                *[other] удаляют
             } { NATURALFIXED($time, 3) } от { LOC($key) }
     }
-reagent-effect-guidebook-activate-artifact =
-    { $chance ->
-        [1] Пытается
-       *[other] пытаются
-    } активировать артефакт
 reagent-effect-guidebook-set-solution-temperature-effect =
     { $chance ->
         [1] Устанавливает
@@ -148,7 +143,7 @@ reagent-effect-guidebook-adjust-reagent-reagent =
                 [1] добавляют
                *[-1] удаляют
             }
-    } { NATURALFIXED($amount, 2) }ед. от { $reagent } { $deltasign ->
+    } { NATURALFIXED($amount, 2) } ед. от { $reagent } { $deltasign ->
         [1] к
        *[-1] из
     } раствора
@@ -240,16 +235,16 @@ reagent-effect-guidebook-drunk =
         [1] Вызывает
        *[other] вызывают
     } опьянение
-reagent-effect-guidebook-emote =
-    { $chance ->
-        [1] Заставляет
-       *[other] заставляют
-    } метаболизатор [bold][color=white]{ $emote }[/color][/bold]
 reagent-effect-guidebook-electrocute =
     { $chance ->
         [1] Бьёт током
        *[other] бьют током
     } употребившего в течении { NATURALFIXED($time, 3) }
+reagent-effect-guidebook-emote =
+    { $chance ->
+        [1] Вызывает
+       *[other] вызвать
+    }  у цели [bold][color=white]{ $emote }[/color][/bold]
 reagent-effect-guidebook-extinguish-reaction =
     { $chance ->
         [1] Гасит
@@ -358,8 +353,7 @@ reagent-effect-guidebook-artifact-unlock =
     { $chance ->
         [1] Помогает
        *[other] помогают
-    } открыть инопланетный артефакт.
-reagent-effect-guidebook-artifact-durability-restore = Восстанавливает { $restored } прочности активных узлов инопланетного артефакта.
+    } разблокировать инопланетный артефакт.
 reagent-effect-guidebook-add-to-solution-reaction =
     { $chance ->
         [1] Заставляет
