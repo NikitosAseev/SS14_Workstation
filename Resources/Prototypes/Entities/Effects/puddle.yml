@@ -163,6 +163,8 @@
       types:
         Holiness: 5
   - type: Slippery
+    staminaDamage: 0
+    frictionStatusTime: 0 # Don't apply friction twice
   - type: Transform
     noRot: true
     anchored: true
