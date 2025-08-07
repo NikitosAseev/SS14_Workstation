@@ -1057,7 +1057,6 @@
     solution: wool
     requiresSpecialDigestion: true
     # Wooly prevents eating wool deleting the goat so its fine
-    requireDead: false
   - type: FlavorProfile
     flavors:
     - fiber
@@ -1783,7 +1782,6 @@
       Dead:
         Base: splat-0
   - type: Food
-    requireDead: false # Exodus-EatTheMice
   - type: FlavorProfile
     flavors:
     - meaty
@@ -1811,7 +1809,7 @@
       food:
         reagents:
         - ReagentId: UncookedAnimalProteins
-          Quantity: 6 # Exodus-MRP
+          Quantity: 3
   - type: Butcherable
     spawned:
     - id: FoodMeatRat
@@ -3148,7 +3146,7 @@
     factions:
     - Syndicate
   - type: Access
-    tags: 
+    tags:
     - NuclearOperative
     - SyndicateAgent
   - type: MeleeWeapon
@@ -3440,7 +3438,6 @@
       Dead:
         Base: splat-0
   - type: Food
-    requireDead: false # Exodus-EatTheMice
   - type: FlavorProfile
     flavors:
     - meaty
@@ -3453,9 +3450,9 @@
       food:
         reagents:
         - ReagentId: Nutriment
-          Quantity: 2.5 # Exodus-MRP
+          Quantity: 10
         - ReagentId: Blood
-          Quantity: 2.5 # Exodus-MRP
+          Quantity: 55
         - ReagentId: Fat
           Quantity: 5
   - type: Butcherable
