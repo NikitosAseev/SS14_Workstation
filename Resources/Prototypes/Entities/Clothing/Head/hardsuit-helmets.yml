@@ -337,7 +337,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/security-warden.rsi
   - type: PointLight
-    color: cyan # Corvax-Resprite
+    color: "#ffeead"
   - type: PressureProtection
     highPressureMultiplier: 0.525
     lowPressureMultiplier: 1000
@@ -363,8 +363,6 @@
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
-  - type: NightVision # RPSX EDIT
-    isEquipment: true
   - type: Tag
     tags:
     - CorgiWearable
@@ -459,8 +457,8 @@
     sprite: Clothing/Head/Hardsuits/rd.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/rd.rsi
-  - type: PointLight # Corvax-Resprite
-    color: "#a4fef4"
+  - type: PointLight
+    color: "#d6adff"
   - type: PressureProtection
     highPressureMultiplier: 0.60
     lowPressureMultiplier: 1000
@@ -492,9 +490,6 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-  - type: NightVision # RPSX EDIT
-    isEquipment: true
-
 
 #Luxury Mining Hardsuit
 - type: entity
@@ -528,7 +523,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/syndicate.rsi
   - type: PointLight
-    color: red #RPSX edit
+    color: green
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
@@ -556,7 +551,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/syndiemedic.rsi
   - type: PointLight
-    color: red #RPSX edit
+    color: green
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
@@ -613,7 +608,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/syndiecommander.rsi
   - type: PointLight
-    color: red #RPSX edit
+    color: green
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
@@ -640,8 +635,6 @@
     sprite: Clothing/Head/Hardsuits/cybersun.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/cybersun.rsi
-  - type: PointLight
-    color: red #RPSX edit
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
@@ -669,7 +662,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/wizard.rsi
   - type: PointLight
-    color: "#a4fef4" # Corvax-Resprite
+    color: "#ffadfb"
   - type: PressureProtection
     highPressureMultiplier: 0.27
     lowPressureMultiplier: 1000
@@ -772,8 +765,8 @@
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertleader.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertleader.rsi
-  - type: PointLight # Corvax-Resprite
-    color: cyan
+  - type: PointLight
+    color: "#addbff"
   - type: Armor
     modifiers:
       coefficients:
@@ -781,9 +774,6 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-  - type: NightVision # RPSX EDIT
-    isEquipment: true
-    color: "#5ECDF7"
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -798,9 +788,6 @@
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertchaplain.rsi
   - type: PointLight
     color: "#ffffff"
-  - type: NightVision # RPSX EDIT
-    isEquipment: true
-    color: "#5ECDF7"
 
 #ERT Engineer Hardsuit
 - type: entity
@@ -814,7 +801,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertengineer.rsi
   - type: PointLight
-    color: cyan # Corvax-Resprite
+    color: "#f4ffad"
   - type: FireProtection
     reduction: 0.2
   - type: Armor
@@ -824,9 +811,6 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-  - type: NightVision # RPSX EDIT
-    isEquipment: true
-    color: "#5ECDF7"
 
 #ERT Medical Hardsuit
 - type: entity
@@ -840,10 +824,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertmedical.rsi
   - type: PointLight
-    color: "#44c9b1"
-  - type: NightVision # RPSX EDIT
-    isEquipment: true
-    color: "#5ECDF7"
+    color: "#adffec"
 
 #ERT Security Hardsuit
 - type: entity
@@ -857,7 +838,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertsecurity.rsi
   - type: PointLight
-    color: cyan # Corvax-Resprite
+    color: "#ffadc6"
   - type: Armor
     modifiers:
       coefficients:
@@ -865,9 +846,6 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-  - type: NightVision # RPSX EDIT
-    isEquipment: true
-    color: "#5ECDF7"
 
 #ERT Janitor Hardsuit
 - type: entity
@@ -881,7 +859,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertjanitor.rsi
   - type: PointLight
-    color: "#44c9b1" # RPSX EDIT
+    color: "#cbadff"
 
 #CBURN Hardsuit
 - type: entity
@@ -907,7 +885,7 @@
       - state: equipped-head-unshaded
         shader: unshaded
   - type: PointLight
-    color: orange # Corvax-Resprite
+    color: orange
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
@@ -921,9 +899,6 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-  - type: NightVision # RPSX EDIT
-    isEquipment: true
-    color: "#5ECDF7"
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.75
 
@@ -939,8 +914,6 @@
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
-  - type: PointLight # Corvax-Resprite
-    color: cyan
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
@@ -955,12 +928,6 @@
         Heat: 0.80
         Radiation: 0.80
         Caustic: 0.95
-  # RPSX EDIT START
-  - type: ThermalVision
-    isEquipment: true
-    color: "#5ECDF7"
-    lightRadius: 15
-  # RPSX EDIT END
 
 #MISC. HARDSUITS
 #Clown Hardsuit
@@ -977,8 +944,6 @@
     sprite: Clothing/Head/Hardsuits/clown.rsi
     equipSound: /Audio/Mecha/mechmove03.ogg
     unequipSound: /Audio/Effects/Emotes/parp1.ogg
-  - type: PointLight # Corvax-Resprite
-    color: "#ff3399"
 
 #Mime Hardsuit
 - type: entity

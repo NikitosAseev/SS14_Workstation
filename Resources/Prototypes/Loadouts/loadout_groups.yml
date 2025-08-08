@@ -80,7 +80,6 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyOxygenMechInjector # Exodus-ThickSyringes
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -499,7 +498,6 @@
   loadouts:
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
-  - EmergencyOxygenClownMechInjector # Exodus-ThickSyringes
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
@@ -556,7 +554,6 @@
   loadouts:
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
-  - EmergencyOxygenMimeMechInjector # Exodus-ThickSyringes
   - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
 
@@ -847,7 +844,6 @@
   loadouts:
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
-  - EmergencyOxygenExtendedMechInjector # Exodus-ThickSyringes
   - LoadoutSpeciesVoxNitrogen
 
 # Science
@@ -1134,7 +1130,6 @@
   loadouts:
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
-  - EmergencyOxygenSecurityMechInjector # Exodus-ThickSyringes
   - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
@@ -1340,7 +1335,6 @@
   loadouts:
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
-  - EmergencyOxygenMedicalMechInjector # Exodus-ThickSyringes
   - LoadoutSpeciesVoxNitrogen
 
 # Wildcards
@@ -1384,7 +1378,6 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
-#  - EmergencyOxygenSyndicateMechInjector # Exodus-ThickSyringes
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool

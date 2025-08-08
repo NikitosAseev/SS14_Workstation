@@ -45,10 +45,6 @@
       amount: 2
     - id: NetworkConfigurator
     - id: Binoculars
-    # Exodus-ShockCollar-Start
-    - id: ClothingNeckShockCollar
-      amount: 2
-    # Exodus-ShockCollar-End
 
 - type: entityTable
   id: FillLockerWardenHarduit
