@@ -1,9 +1,10 @@
 # Components
-spray-painter-ammo-on-examine = Содержит { $charges } { $charge ->
+spray-painter-ammo-on-examine =
+    Содержит { $charges } { $charge ->
         [1] заряд
         [few] заряда
-        *[other] зарядов
-        }.
+       *[other] зарядов
+    }.
 spray-painter-ammo-after-interact-full = Краскопульт полный!
 spray-painter-ammo-after-interact-refilled = Вы заправляете краскопульт.
 spray-painter-interact-no-charges = Не хватает краски.

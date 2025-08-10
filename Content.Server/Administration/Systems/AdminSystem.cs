@@ -82,7 +82,6 @@ public sealed class AdminSystem : EntitySystem
         Subs.CVar(_config, CCVars.PanicBunkerShowReason, OnPanicBunkerShowReasonChanged, true);
         Subs.CVar(_config, CCVars.PanicBunkerMinAccountAge, OnPanicBunkerMinAccountAgeChanged, true);
         Subs.CVar(_config, CCVars.PanicBunkerMinOverallMinutes, OnPanicBunkerMinOverallMinutesChanged, true);
-        Subs.CVar(_config, RPSXCCVars.DiscordAuthEnabled, OnDiscordAuthChanged, true);
 
         SubscribeLocalEvent<PlayerAttachedEvent>(OnPlayerAttached);
         SubscribeLocalEvent<PlayerDetachedEvent>(OnPlayerDetached);
@@ -92,12 +91,6 @@ public sealed class AdminSystem : EntitySystem
 
         SubscribeLocalEvent<ActorComponent, EntityRenamedEvent>(OnPlayerRenamed);
         SubscribeLocalEvent<ActorComponent, IdentityChangedEvent>(OnIdentityChanged);
-    }
-
-    private void OnDiscordAuthChanged(bool obj)
-    {
-        // PanicBunker.DiscordAuthEnabled = obj;
-        SendPanicBunkerStatusAll();
     }
 
     private void OnRoundRestartCleanup(RoundRestartCleanupEvent ev)
