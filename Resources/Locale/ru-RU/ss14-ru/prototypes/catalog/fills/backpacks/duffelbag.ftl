@@ -10,8 +10,9 @@ ent-ClothingBackpackDuffelSyndicateFilledSMG = { ent-ClothingBackpackDuffelSyndi
     .suffix = набор "C-20r"
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
 ent-ClothingBackpackDuffelSyndicateFilledRifle = Комплект DMR «Estoc»
-    .desc = Для точной стрельбы на средних дистанциях - автоматическая винтовка Estoc. В комплекте 2 доп. магазина.
-    ent-ClothingBackpackDuffelSyndicateFilledRevolver = { ent-ClothingBackpackDuffelSyndicate }
+    .desc =
+        Для точной стрельбы на средних дистанциях - автоматическая винтовка Estoc. В комплекте 2 доп. магазина.
+        ent-ClothingBackpackDuffelSyndicateFilledRevolver = { ent-ClothingBackpackDuffelSyndicate }
     .suffix = набор "Питон"
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
 ent-ClothingBackpackDuffelSyndicateFilledLMG = { ent-ClothingBackpackDuffelSyndicate }
