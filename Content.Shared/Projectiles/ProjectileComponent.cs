@@ -2,6 +2,7 @@ using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
+using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Projectiles;
@@ -42,7 +43,8 @@ public sealed partial class ProjectileComponent : Component
     /// <summary>
     ///     The amount of damage the projectile will do.
     /// </summary>
-    [DataField(required: true)] [ViewVariables(VVAccess.ReadWrite)]
+    [DataField(required: true)]
+    [ViewVariables(VVAccess.ReadWrite)]
     public DamageSpecifier Damage = new();
 
     /// <summary>
@@ -99,6 +101,11 @@ public sealed partial class ProjectileComponent : Component
     [DataField]
     public FixedPoint2 PenetrationAmount = FixedPoint2.Zero;
 
-    [DataField]
-    public bool DamageBodyParts = true;
+    // RPSX Start
+    [ViewVariables]
+    public MapCoordinates ShootCoords;
+
+    [ViewVariables]
+    public float WeaponAngle;
+    // RPSX End
 }
